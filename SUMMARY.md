@@ -6,5 +6,5 @@
 
 * MVC
 * MVP
-* MVVM
+* [MVVM](jia-gou/mvvm.md)
 
