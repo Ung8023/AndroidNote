@@ -240,5 +240,5 @@ android:text="@{map['firstName']}"
 ### 引用资源
 #### 直接引用
 ```xml
-    android:padding="@{large? @dimen/largePadding : @dimen/smallPadding}"
+android:padding="@{large? @dimen/largePadding : @dimen/smallPadding}"
 ```
