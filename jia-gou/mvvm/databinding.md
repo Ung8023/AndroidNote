@@ -60,7 +60,9 @@ android{
 ```
 
 #### `User.java`文件
+```java
 
+```
 
 ### DataBinding工作过程
 #### 前提
