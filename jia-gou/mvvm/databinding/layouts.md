@@ -101,7 +101,12 @@
 | 变量类型 | 默认值 |
 | :---: | :---: |
 | 引用类型 | null |
+|  byte  | 0(byte) |
+| short  | 0(short)|
 |  int   |   0   |
+| long  | 0L |
+| float | 0.0f |
+| double | 0.0d |
 | char  | '/uoooo'(null) |
 | boolean| false|
 
