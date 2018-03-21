@@ -43,4 +43,4 @@ android{
 已经配置好了，DataBinding环境
 
 #### 工作原理图
-
+![](/assets/DataBinding工作原理.png)
