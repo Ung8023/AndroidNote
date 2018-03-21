@@ -15,6 +15,8 @@
 ```xml
 <layout>
         <data>
+                <import />
+                <variable />
         </data>
         
         <LinearLayout>
