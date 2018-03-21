@@ -29,4 +29,4 @@
 
 #### DataBinding Layout结构说明
 1. 跟布局变为`<layout>`
-2. 原来的布局可原样作为`<layout>`的子节点
+2. 原来的布局原样作为`<layout>`的子节点
