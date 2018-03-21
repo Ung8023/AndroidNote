@@ -27,3 +27,4 @@
 </layout>
 ```
 
+#### DataBinding Layout结构说明
