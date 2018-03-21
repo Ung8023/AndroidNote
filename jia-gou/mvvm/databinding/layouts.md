@@ -82,3 +82,6 @@
     <variable name="note"  type="String"/>
 </data>
 ```
+#### 变量的默认值
+
+
