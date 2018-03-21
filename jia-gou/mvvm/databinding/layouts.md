@@ -147,7 +147,25 @@ name为`context`的自动生成，值来自于**rootView**的`getContext()`方�
 1. 可以传递变量到`include` 的`Layout`中
 2. 但是`include`的`layout`中必须含有，对应的变量
 
-
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <layout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:bind="http://schemas.android.com/apk/res-auto">
+       <data>
+           <variable name="user" type="com.example.User"/>
+       </data>
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <include layout="@layout/name"
+               bind:user="@{user}"/>
+           <include layout="@layout/contact"
+               bind:user="@{user}"/>
+       </LinearLayout>
+    </layout>
+    ```
+3. DataBinding 不支持将`include`的`layout`通过`merge`标签作为直接子节点。
 
 ```java
 <?xml version="1.0" encoding="utf-8"?>
