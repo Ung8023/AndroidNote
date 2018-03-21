@@ -12,7 +12,7 @@ Google推出的既灵活又兼容低版本的支持库，使编码更简单，�
 3. 如果使用`DataBindingCompiler V2`,**gradle**版本需要在***3.1.0 Canary 6***或以上
 
 #### 使用DataBinding
-```
+```java
 android{
     ...
     dataBinding {
