@@ -35,6 +35,6 @@ android{
  android.databinding.enableV2=true
 ```
 
-
+## 经过以上配置，你就可以开心的使用DataBinding了
 
 
