@@ -86,7 +86,6 @@ protected void onCreate(Bundle savedInstanceState) {
    User user = new User("Test", "User");
    binding.setUser(user);
 }
-
 ```
 
 ### DataBinding工作过程
