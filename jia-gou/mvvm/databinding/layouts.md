@@ -229,4 +229,10 @@ android:text="@{user.lastName}"
 
 	* user为null -> 表达式为0
 	
-### 
+### 引用文字
+
+```xml
+android:text='@{map["firstName"]}' 
+android:text="@{map[`firstName`}"  
+android:text="@{map['firstName']}" 
+``` 
