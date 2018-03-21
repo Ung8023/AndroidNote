@@ -12,3 +12,6 @@
 ```
 
 ##### DataBinding的Layout结构
+```xml
+
+```
