@@ -236,3 +236,5 @@ android:text='@{map["firstName"]}'
 android:text="@{map[`firstName`}"  
 android:text="@{map['firstName']}" 
 ``` 
+
+### 引用资源
