@@ -78,7 +78,7 @@ public class User {
 ```
 
 #### `ActivityDemo.java`
-```
+```java
 @Override
 protected void onCreate(Bundle savedInstanceState) {
    super.onCreate(savedInstanceState);
