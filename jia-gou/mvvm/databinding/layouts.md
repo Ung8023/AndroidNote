@@ -70,3 +70,14 @@
 
 3. 可以直接使用静态属性
 4. `java.lang.*`下的已经自动导入
+
+### 变量
+
+```
+<data>
+    <import type="android.graphics.drawable.Drawable"/>
+    <variable name="user"  type="com.example.User"/>
+    <variable name="image" type="Drawable"/>
+    <variable name="note"  type="String"/>
+</data>
+```
