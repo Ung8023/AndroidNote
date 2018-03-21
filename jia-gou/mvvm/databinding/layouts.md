@@ -43,3 +43,30 @@
 可以将它理解为`xml`里的**形参**,它会作为成员被生成到DataBinding中。
 
 ### Imports
+可以在`<data>`节点下进行导包,与使用`java`一样,对于想使用的包,要进行导入,以方便访问。
+
+1. 像java一样导入一个包或者类
+
+	```xml
+	<data>
+	    <import type="android.view.View"/>
+	</data>
+	
+	<TextView
+	   android:text="@{user.lastName}"
+	   android:layout_width="wrap_content"
+	   android:layout_height="wrap_content"
+	   android:visibility="@{user.isAdult ? View.VISIBLE : View.GONE}"/>
+	
+	```
+	
+2. 指定别名
+
+	```xml
+	<import type="android.view.View"/>
+	<import type="com.example.real.estate.View"
+        alias="Vista"/>
+	```
+
+3. 可以直接使用静态属性
+4. `java.lang.*`下的已经自动导入
