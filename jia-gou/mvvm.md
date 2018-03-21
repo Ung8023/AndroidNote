@@ -9,6 +9,8 @@
 与MVC,MVP一样，是用户能在屏幕看得到的结构、布局和外观
 ##### ViewModel
 负责完成View与Model间的交互，负责业务逻辑。
+##### DataBinding
+只是谷歌提供一个库，可以用来构建MVVM，如果有其他的库，也可以
 
 ### 实现架构图
 ![](/assets/MVVM基本实现架构图.png)
