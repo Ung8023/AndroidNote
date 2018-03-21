@@ -16,10 +16,11 @@
 <layout>
         <data>
         </data>
+        
         <LinearLayout>
         <CheckBox/>
         <TextView/>
-</LinearLayout>
+        </LinearLayout>
 
 </layout>
 ```
