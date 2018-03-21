@@ -16,3 +16,7 @@
 ![](/assets/MVVM基本实现架构图.png)
 
 ### 开发过程
+![](/assets/MVVM开发过程.png)
+
+### 示例Demo
+![](/assets/MVVM-Demo示例.png)
