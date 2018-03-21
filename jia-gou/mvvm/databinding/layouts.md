@@ -110,4 +110,5 @@
 | char  | '/uoooo'(null) |
 | boolean| false|
 
+#### 特殊的变量
 
