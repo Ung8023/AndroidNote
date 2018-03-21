@@ -102,4 +102,6 @@
 | :---: | :---: |
 | 引用类型 | null |
 |  int   |   0   |
+| char  | '/uoooo'(null) |
+| boolean| false|
 
