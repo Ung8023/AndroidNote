@@ -17,7 +17,7 @@ Google推出的既灵活又兼容低版本的支持库，使编码更简单，�
 3. 如果使用`DataBindingCompiler V2`,**gradle**版本需要在_**3.1.0 Canary 6**_或以上
 
 #### 使用DataBinding
-在Moudel级别的build.gradle中添加:  
+在Moudel级别的`build.gradle`中添加:  
 
 ```java
 android{
@@ -29,9 +29,9 @@ android{
 ```
 
 ##### 使用DataBindingCompiler V2
-
+在`grable.properties`中添加
 ```
-
+ android.databinding.enableV2=true
 ```
 
 
