@@ -29,8 +29,9 @@ android{
 ```
 
 ##### 使用DataBindingCompiler V2
-在`grable.properties`中添加
-```
+在`grable.properties`中添加  
+
+```java
  android.databinding.enableV2=true
 ```
 
