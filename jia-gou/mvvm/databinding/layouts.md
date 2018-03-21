@@ -219,3 +219,14 @@ android:text="@{user.displayName != null ? user.displayName : user.lastName}"
 android:text="@{user.lastName}"
 ```
 
+### 避免空指针
+1. 如果引用对象, ${user.name}
+
+	* name为null  -> 则表达式为null
+	* user为null  -> 则表达式为null
+
+2. 引用${user.age}，age为int
+
+	* user为null -> 表达式为0
+	
+### 
