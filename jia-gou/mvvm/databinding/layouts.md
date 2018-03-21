@@ -3,7 +3,7 @@
 
 ### 创建新式Layout
 #### 新的结构
-##### 老式Layout结构：
+##### 原来的Layout结构：
 ```xml
 <LinearLayout>
         <CheckBox/>
@@ -11,3 +11,4 @@
 </LinearLayout>
 ```
 
+##### DataBinding的Layout结构
