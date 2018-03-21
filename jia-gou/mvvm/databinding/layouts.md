@@ -13,5 +13,13 @@
 
 ##### DataBinding的Layout结构
 ```xml
+<layout>
+        <data>
+        </data>
+        <LinearLayout>
+        <CheckBox/>
+        <TextView/>
+</LinearLayout>
 
+</layout>
 ```
