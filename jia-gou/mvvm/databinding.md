@@ -28,7 +28,7 @@ android{
 ```
 ##### 使用DataBindingCompiler V2
 ```
-
+asfasfafs
 ```
 
 
