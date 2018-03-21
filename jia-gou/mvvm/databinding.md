@@ -13,8 +13,6 @@ Google推出的既灵活又兼容低版本的支持库，使编码更简单，�
 
 #### 使用DataBinding
 
-
-
 ```
 asdasdasdasdasasdasdsasddasadsadsddasadsadsads
 ```
