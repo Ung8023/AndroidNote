@@ -110,5 +110,5 @@
 | char  | '/uoooo'(null) |
 | boolean| false|
 
-#### 特殊的变量
-
+#### 特殊的变量(context)
+name为`context`的自动生成，值来自于**rootView**的`getContext()`方法，如果定义了与`context`同名的变量，则原来的context就会被替换。
