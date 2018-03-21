@@ -79,6 +79,13 @@ public class User {
 
 #### `ActivityDemo.java`
 ```
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+   super.onCreate(savedInstanceState);
+   MainActivityBinding binding = DataBindingUtil.setContentView(this, R.layout.main_activity);
+   User user = new User("Test", "User");
+   binding.setUser(user);
+}
 
 ```
 
