@@ -117,6 +117,7 @@ name为`context`的自动生成，值来自于**rootView**的`getContext()`方�
 #### 默认
 1. 根据Layout的名字生成
 2. 生成规则：按照类名规则,去掉下划线末尾加上Binding
+
 #### 自定义类名
 * 方式：在指定data的时候，通过class属性指定类名
 * 三种类名定义
