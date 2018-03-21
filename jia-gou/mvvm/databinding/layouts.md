@@ -5,6 +5,9 @@
 #### 新的结构
 ##### 老式Layout结构：
 ```xml
-
+<LinearLayout>
+        <CheckBox/>
+        <TextView/>
+</LinearLayout>
 ```
 
