@@ -14,16 +14,15 @@
 ##### DataBinding的Layout结构
 ```xml
 <layout>
-        <data>
-                <import />
-                <variable />
-        </data>
+    <data>
+        <import />
+        <variable />
+    </data>
         
-        <LinearLayout>
-        <CheckBox/>
-        <TextView/>
-        </LinearLayout>
-
+    <LinearLayout>
+    <CheckBox/>
+    <TextView/>
+    </LinearLayout>
 </layout>
 ```
 
