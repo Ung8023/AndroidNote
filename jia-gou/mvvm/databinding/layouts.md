@@ -112,3 +112,32 @@
 
 #### 特殊的变量(context)
 name为`context`的自动生成，值来自于**rootView**的`getContext()`方法，如果定义了与`context`同名的变量，则原来的context就会被替换。
+
+### 定义Binding类名
+#### 默认
+1. 根据Layout的名字生成
+2. 生成规则：按照类名规则,去掉下划线末尾加上Binding
+#### 自定义类名
+* 方式：在指定data的时候，通过class属性指定类名
+* 三种类名定义
+	1. 在databinding生成的包下
+	
+		```
+		<data class="ContactItem">
+    		...
+		</data>
+		```
+	2. 在当前的Module包下
+	
+		```
+		<data class=".ContactItem">
+		    ...
+		</data>
+		```
+	3. 指定包下
+	
+		```
+		<data class="com.example.ContactItem">
+		    ...
+		</data>
+		```
