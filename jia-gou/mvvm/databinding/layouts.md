@@ -28,3 +28,5 @@
 ```
 
 #### DataBinding Layout结构说明
+1. 跟布局变为`<layout>`
+2. 
