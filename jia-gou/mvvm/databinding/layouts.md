@@ -6,8 +6,8 @@
 ##### 原来的Layout结构：
 ```xml
 <LinearLayout>
-        <CheckBox/>
-        <TextView/>
+    <CheckBox/>
+    <TextView/>
 </LinearLayout>
 ```
 
