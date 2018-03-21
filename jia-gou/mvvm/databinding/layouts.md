@@ -82,4 +82,3 @@
     <variable name="note"  type="String"/>
 </data>
 ```
-
