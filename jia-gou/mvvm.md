@@ -22,3 +22,4 @@
 ![](/assets/MVVM-Demo示例.png)
 
 ### MVVM-UML
+![](/assets/MVVM-类图.png)
