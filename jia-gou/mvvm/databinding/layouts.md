@@ -284,5 +284,17 @@ android:text="@{@plurals/banana(bananaCount)}"
 android:text="@{@plurals/orange(orangeCount, orangeCount)}"
 ```
 
+#### 一些资源需要指定明确的引用:
+
+| 类型 | 普通引用 | DataBinding表达式引用 |
+| :---: | :---: | :---: |
+| String\[\] | @array | @stringArray |
+| int\[\] | @array | @intArray |
+| TypedArray | @array | @typedArray |
+| Animator | @animator | @animator |
+| StateListAnimator | @animator | @stateListAnimator |
+| color int | @color | @color |
+| ColorStateList | @color | @colorStateList |
+
 
 
