@@ -85,7 +85,7 @@
 
 变量是可以被认为是，在`Layout`中引用时候的形参，在编译过程中，会作为私有成员封装在生成的Binding文件中。
 
-```
+```xml
 <data>
     <import type="android.graphics.drawable.Drawable"/>
     <variable name="user"  type="com.example.User"/>
@@ -101,53 +101,60 @@
 | 变量类型 | 默认值 |
 | :---: | :---: |
 | 引用类型 | null |
-|  byte  | 0(byte) |
-| short  | 0(short)|
-|  int   |   0   |
-| long  | 0L |
+| byte | 0\(byte\) |
+| short | 0\(short\) |
+| int | 0 |
+| long | 0L |
 | float | 0.0f |
 | double | 0.0d |
-| char  | '/uoooo'(null) |
-| boolean| false|
+| char | '/uoooo'\(null\) |
+| boolean | false |
 
-#### 特殊的变量(context)
+#### 特殊的变量\(context\)
+
 name为`context`的自动生成，值来自于**rootView**的`getContext()`方法，如果定义了与`context`同名的变量，则原来的context就会被替换。
 
 ### 定义Binding类名
+
 #### 默认
+
 1. 根据Layout的名字生成
 2. 生成规则：按照类名规则,去掉下划线末尾加上Binding
 
 #### 自定义Binding的类名
+
 * 方式：在指定data的时候，通过class属性指定类名
-* 三种类名定义
-	1. 在databinding生成的包下
-	
-		```
-		<data class="ContactItem">
-    		...
-		</data>
-		```
-	2. 在当前的Module包下
-	
-		```
-		<data class=".ContactItem">
-		    ...
-		</data>
-		```
-	3. 指定包下
-	
-		```
-		<data class="com.example.ContactItem">
-		    ...
-		</data>
-		```
+* 三种类名定义  
+    1. 在databinding生成的包下
+
+  ```
+        <data class="ContactItem">
+            ...
+        </data>
+  ```
+
+  1. 在当前的Module包下
+
+     ```
+      <data class=".ContactItem">
+          ...
+      </data>
+     ```
+
+  2. 指定包下
+
+     ```
+      <data class="com.example.ContactItem">
+          ...
+      </data>
+     ```
 
 ### include
+
 1. 可以传递变量到`include` 的`Layout`中
 2. 但是`include`的`layout`中必须含有，对应的变量
 
-    ```xml
+   ```xml
     <?xml version="1.0" encoding="utf-8"?>
     <layout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:bind="http://schemas.android.com/apk/res-auto">
@@ -164,10 +171,11 @@ name为`context`的自动生成，值来自于**rootView**的`getContext()`方�
                bind:user="@{user}"/>
        </LinearLayout>
     </layout>
-    ```
+   ```
+
 3. DataBinding 不支持将`include`的`layout`通过`merge`标签作为直接子节点。例如以下方式是**不支持的**
 
-    ```xml
+   ```xml
     <?xml version="1.0" encoding="utf-8"?>
     <layout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:bind="http://schemas.android.com/apk/res-auto">
@@ -181,29 +189,32 @@ name为`context`的自动生成，值来自于**rootView**的`getContext()`方�
                bind:user="@{user}"/>
        </merge>
     </layout>
-    ```
+   ```
 
 ### 支持的表达式
+
 #### 普通表达式
-* 数学 ```+ - / * %```
-* 字符串拼接 ```+```
-* 逻辑表达式 ```&& ||```
-* 位运算 ```& | ^```
-* 一元运算符 ```+ - ! ~```
-* 移位 ```>> >>> <<```
-* 比较 ```== > < >=  <= ```
+
+* 数学 `+ - / * %`
+* 字符串拼接 `+`
+* 逻辑表达式 `&& ||`
+* 位运算 `& | ^`
+* 一元运算符 `+ - ! ~`
+* 移位 `>> >>> <<`
+* 比较 `== > < >=  <=`
 * instanceof
-* 分组```()```
+* 分组`()`
 * 字符
 * 类型转换
 * 调用方法
 * 访问属性
-* 数组访问 ```[]```
-* 三元运算符 ```?:```
+* 数组访问 `[]`
+* 三元运算符 `?:`
 
 #### 空合并表达式
+
 ```xml
-android:text="@{user.displayName ?? user.lastName}" 
+android:text="@{user.displayName ?? user.lastName}"
 ```
 
 等价于
@@ -213,6 +224,7 @@ android:text="@{user.displayName != null ? user.displayName : user.lastName}"
 ```
 
 #### 属性引用
+
 引用属性时，是根据属性名称访问，要么属性是`public`修饰，要么给属性提供`getter 和 setter`
 
 ```xml
@@ -220,25 +232,57 @@ android:text="@{user.lastName}"
 ```
 
 ### 避免空指针
+
 1. 如果引用对象, ${user.name}
 
-	* name为null  -> 则表达式为null
-	* user为null  -> 则表达式为null
+   * name为null  -&gt; 则表达式为null
+   * user为null  -&gt; 则表达式为null
 
 2. 引用${user.age}，age为int
 
-	* user为null -> 表达式为0
-	
+   * user为null -&gt; 表达式为0
+
 ### 引用文字
 
 ```xml
 android:text='@{map["firstName"]}' 
 android:text="@{map[`firstName`}"  
-android:text="@{map['firstName']}" 
-``` 
+android:text="@{map['firstName']}"
+```
 
 ### 引用资源
+
 #### 直接引用
+
 ```xml
 android:padding="@{large? @dimen/largePadding : @dimen/smallPadding}"
 ```
+
+#### 引用字符串资源
+
+```xml
+android:text="@{@string/nameFormat(firstName, lastName)}"
+android:text="@{@plurals/banana(bananaCount)}"
+```
+
+复数字符串:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals
+        name="banana">
+        <item quantity="one">have a banana</item>
+        <item quantity="other">have %d bananas</item>
+    </plurals>
+</resources>
+```
+
+如复数字符串资源需要多个参数,需要传递多个参数
+
+```xml
+android:text="@{@plurals/orange(orangeCount, orangeCount)}"
+```
+
+
+
