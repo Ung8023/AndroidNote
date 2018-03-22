@@ -157,3 +157,11 @@ public static void setListener(View view, final OnViewDetachedFromWindow detach,
 ## Converters
 因为在**DataBinding**中，**Layout**中使用 **表达式**来表示，所以返回值有时是**Object**，那么**setter**就会自动匹配类型，并且`Object`会被转成形参需要的类型
 
+```xml
+<TextView
+   android:text='@{userMap["lastName"]}'
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"/>
+```
+
+userMap返回一个对象，而且这个对象会被自动转为`setText(CharSequence)`形参需要的类型
