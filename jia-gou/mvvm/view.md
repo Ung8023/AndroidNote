@@ -6,3 +6,4 @@
 
 ### View的行为绑定
 如View的点击等等..可以将Listener作为变量，定义在View中，通过`android:onClick`对应内容中使用lambda表达式调用。
+
