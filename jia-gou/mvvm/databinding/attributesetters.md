@@ -186,4 +186,12 @@ public static ColorDrawable convertColorToDrawable(int color) {
 }
 ```
 
+因为转换发生来setter方法级别，所以**不能**使用混合类型进行转换  比如:
 
+```xml
+<View
+   android:background="@{isError ? @drawable/error : @color/white}"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"/>
+
+```
