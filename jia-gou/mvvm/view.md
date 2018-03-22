@@ -10,7 +10,8 @@
 ```
 <data>
     <variable name="listener" type="com.xx.ClickListener" />
-    
+    <variable name="data" type="com.xx.Data" />
+
     <View 
     ...
     android:onClick="@{() -> listener.onClick()}"
