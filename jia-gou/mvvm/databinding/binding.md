@@ -101,6 +101,7 @@ public class HomeAdapter<T> extends BaseAdapter {
         }else{
             dataBinding = DataBindingUtil.getBinding(convertView);
         }
+        //variableId  对应的变量名
         dataBinding.setVariable(variableId, dataList.get(position));
         return dataBinding.getRoot();
     }
