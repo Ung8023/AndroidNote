@@ -57,3 +57,9 @@ public static void loadImage(ImageView view, String url, Drawable error) {
 <ImageView app:imageUrl="@{venue.imageUrl}"
 app:error="@{@drawable/venueError}"/>
 ```
+
+#### 可以为android下的属性写Adapter:
+
+```java
+
+```
