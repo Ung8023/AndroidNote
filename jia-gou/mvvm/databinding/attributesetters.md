@@ -180,3 +180,5 @@ userMap返回一个对象，而且这个对象会被自动转为`setText(CharSeq
 而因为background的需要的类型是`Drawable`，所以会将`int`型的`color`转为`ColorDrawable`.通过静态方法+`@BindingConversion`
 
 
+
+
