@@ -21,7 +21,7 @@
 </data>
 ```
 
-```
+```java
 public interface ClickListener {
     void onClick(View view, Data data);
 }
