@@ -116,5 +116,26 @@ private static class User {
 如果key是引用类型，那么，你就可以使用`ObservableArrayMap`
 
 ```java
+ObservableArrayMap<String, Object> user = new ObservableArrayMap<>();
+user.put("firstName", "Google");
+user.put("lastName", "Inc.");
+user.put("age", 17);
+```
 
+在Layout中使用：
+
+```xml
+<data>
+    <import type="android.databinding.ObservableMap"/>
+    <variable name="user" type="ObservableMap&lt;String, Object&gt;"/>
+</data>
+…
+<TextView
+   android:text='@{user["lastName"]}'
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"/>
+<TextView
+   android:text='@{String.valueOf(1 + (Integer)user["age"])}'
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"/>
 ```
