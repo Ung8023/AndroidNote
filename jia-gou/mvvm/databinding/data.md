@@ -143,3 +143,9 @@ user.put("age", 17);
 ##### ObservableList
 如果key是`integer`类型，那么，你就可以使用`ObservableArrayList`
 
+```java
+ObservableArrayList<Object> user = new ObservableArrayList<>();
+user.add("Google");
+user.add("Inc.");
+user.add(17);
+```
