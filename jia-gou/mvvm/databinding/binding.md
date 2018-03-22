@@ -187,3 +187,10 @@ public class RecyclerViewAdapter<T> extends RecyclerView.Adapter<RecyclerViewAda
    </LinearLayout>
 </layout>
 ```
+
+生成的Binding Class：  
+
+```java
+public final TextView firstName;
+public final TextView lastName;
+```
