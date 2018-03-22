@@ -203,14 +203,14 @@ public final TextView lastName;
 
 ```java
 ViewStubProxy viewStubProxy;
-        viewStubProxy = new ViewStubProxy(viewStub);
-        viewStubProxy.setContainingBinding(dataBinding);
-        viewStubProxy.setOnInflateListener(new ViewStub.OnInflateListener() {
-            @Override
-            public void onInflate(ViewStub viewStub, View view) {
-                Log.w("ViewStub", "inflated");
-            }
-        });
+viewStubProxy = new ViewStubProxy(viewStub);
+viewStubProxy.setContainingBinding(dataBinding);
+viewStubProxy.setOnInflateListener(new ViewStub.OnInflateListener() {
+    @Override
+    public void onInflate(ViewStub viewStub, View view) {
+        Log.w("ViewStub", "inflated");
+    }
+});
 ```
 
 
