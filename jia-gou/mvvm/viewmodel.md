@@ -15,38 +15,38 @@ dependencies {
 
 1. 继承ViewModel
 
-```java
-public class MyViewModel extends ViewModel {
-    private MutableLiveData<List<User>> users;
-    public LiveData<List<User>> getUsers() {
-        if (users == null) {
-            users = new MutableLiveData<List<Users>>();
-            loadUsers();
+    ```java
+    public class MyViewModel extends ViewModel {
+        private MutableLiveData<List<User>> users;
+        public LiveData<List<User>> getUsers() {
+            if (users == null) {
+                users = new MutableLiveData<List<Users>>();
+                loadUsers();
+            }
+            return users;
         }
-        return users;
+    
+        private void loadUsers() {
+            // Do an asynchronous operation to fetch users.
+        }
     }
-
-    private void loadUsers() {
-        // Do an asynchronous operation to fetch users.
-    }
-}
-```
+    ```
 
 2. 继承自AndroidViewModel
 
-```java
-public class MyViewModel extends AndroidViewModel {
-    private MutableLiveData<List<User>> users;
-    public LiveData<List<User>> getUsers() {
-    if (users == null) {
-    users = new MutableLiveData<List<Users>>();
-    loadUsers();
+    ```java
+    public class MyViewModel extends AndroidViewModel {
+        private MutableLiveData<List<User>> users;
+        public LiveData<List<User>> getUsers() {
+        if (users == null) {
+        users = new MutableLiveData<List<Users>>();
+        loadUsers();
+        }
+        return users;
+        }
+        
+        private void loadUsers() {
+        // Do an asynchronous operation to fetch users.
+        }
     }
-    return users;
-    }
-    
-    private void loadUsers() {
-    // Do an asynchronous operation to fetch users.
-    }
-}
-```
+    ```
