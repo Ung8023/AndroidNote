@@ -153,3 +153,5 @@ public static void setListener(View view, final OnViewDetachedFromWindow detach,
     }
 }
 ```
+
+## Converters
