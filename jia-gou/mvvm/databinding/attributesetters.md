@@ -75,5 +75,16 @@ public static void setPaddingLeft(View view, int oldPadding, int newPadding) {
 #### 事件处理只能通过接口或者只含有一个抽象方法的抽象类
 
 ```java
-
+@BindingAdapter("android:onLayoutChange")
+public static void setOnLayoutChangeListener(View view, View.OnLayoutChangeListener oldValue,
+       View.OnLayoutChangeListener newValue) {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+        if (oldValue != null) {
+            view.removeOnLayoutChangeListener(oldValue);
+        }
+        if (newValue != null) {
+            view.addOnLayoutChangeListener(newValue);
+        }
+    }
+}
 ```
