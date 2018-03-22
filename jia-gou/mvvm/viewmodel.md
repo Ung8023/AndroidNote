@@ -6,7 +6,7 @@ ViewModel用来存储和管理UI需要的数据。Google提供了一个ViewModel
 
 ```java
 dependencies {
+    ......
     implementation "android.arch.lifecycle:viewmodel:1.1.1"
 }
-
 ```
