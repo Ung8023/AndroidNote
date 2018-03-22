@@ -27,4 +27,10 @@
 
 ### 定义可观察的Object
 
-然而实际上，**DataBinding**提供的数据驱动UI，是一个强有力的帮手，**当数据变化，直接对UI进行更改**，而最本质的实现机理，就是观察者模式。
+然而实际上，**DataBinding**提供的数据驱动UI，是一个强有力的帮手，**当数据变化，直接对UI进行更改**，而最本质的实现机理，就是观察者模式。而**DataBinding**提供给**Data**，来实现这种变化的有三种：  
+
+* Observable Objects
+* Observable fields
+* Observable Collections
+
+
