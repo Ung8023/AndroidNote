@@ -194,3 +194,6 @@ public class RecyclerViewAdapter<T> extends RecyclerView.Adapter<RecyclerViewAda
 public final TextView firstName;
 public final TextView lastName;
 ```
+
+### 变量
+所有的变量，会提供访问方法(getters 和 setters)
