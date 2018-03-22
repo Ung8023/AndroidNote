@@ -211,7 +211,9 @@ viewStubProxy.setOnInflateListener(new ViewStub.OnInflateListener() {
         Log.w("ViewStub", "inflated");
     }
 });
+//通过ViewStubProxy访问渲染后的View
+viewStubProxy.getRoot().setBackground(new ColorDrawable(Color.RED));
 ```
 
-
+### 
 
