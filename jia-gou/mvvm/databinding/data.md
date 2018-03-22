@@ -98,6 +98,8 @@ public class User {
 2. 目前对于`ObservableList`只有实现类`ObservableArrayList`,而对于`ObservableMap`，只有实现类`ObservableArrayMap`
 
 #### ObservableCollections
+`Observable collections` 允许使用key来访问数据，
+
 前提，数据定义:  
 
 ```java
@@ -111,4 +113,8 @@ private static class User {
 ```
 
 ##### ObservableMap
-`Observable collections` 允许使用key来访问数据，
+如果key是引用类型，那么，你就可以使用`ObservableArrayMap`
+
+```java
+
+```
