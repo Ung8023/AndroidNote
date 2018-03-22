@@ -36,17 +36,17 @@ public class MyViewModel extends ViewModel {
 
 ```java
 public class MyViewModel extends AndroidViewModel {
-private MutableLiveData<List<User>> users;
-public LiveData<List<User>> getUsers() {
-if (users == null) {
-users = new MutableLiveData<List<Users>>();
-loadUsers();
-}
-return users;
-}
-
-private void loadUsers() {
-// Do an asynchronous operation to fetch users.
-}
+    private MutableLiveData<List<User>> users;
+    public LiveData<List<User>> getUsers() {
+    if (users == null) {
+    users = new MutableLiveData<List<Users>>();
+    loadUsers();
+    }
+    return users;
+    }
+    
+    private void loadUsers() {
+    // Do an asynchronous operation to fetch users.
+    }
 }
 ```
