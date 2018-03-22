@@ -155,3 +155,4 @@ public static void setListener(View view, final OnViewDetachedFromWindow detach,
 ```
 
 ## Converters
+因为在**DataBinding**中，**Layout**中使用 **表达式**来表示，所以返回值有时是**Object**，那么**setter**就会自动匹配类型。
