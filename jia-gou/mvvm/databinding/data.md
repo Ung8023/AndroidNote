@@ -39,4 +39,26 @@
 1. 实现 `android.databinding.Observable`接口
 2. 继承 `android.databinding.BaseObservable` 类(此类是`DataBinding`提供的一个已经对`Observable接口`基础实现的类)
 
-
+```java
+private static class User extends BaseObservable {
+   private String firstName;
+   private String lastName;
+   @Bindable
+   public String getFirstName() {
+       return this.firstName;
+   }
+   @Bindable
+   public String getLastName() {
+       return this.lastName;
+   }
+   public void setFirstName(String firstName) {
+       this.firstName = firstName;
+       //当数据发生变化，通知对应的变量的观察者
+       notifyPropertyChanged(BR.firstName);
+   }
+   public void setLastName(String lastName) {
+       this.lastName = lastName;
+       notifyPropertyChanged(BR.lastName);
+   }
+}
+```
