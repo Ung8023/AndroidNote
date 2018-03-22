@@ -10,3 +10,6 @@
     app:drawerListener="@{fragment.drawerListener}"/>
 ```
 
+如上：   
+
+当表达式写为`@{@color/scrim}`,DataBinding会自动寻找`DrawerLayout`中的`setScrimeColor()`,方法
