@@ -177,7 +177,7 @@ userMap返回一个对象，而且这个对象会被自动转为`setText(CharSeq
    android:layout_height="wrap_content"/>
 ```
 
-而因为background的需要的类型是`Drawable`，所以会将`int`型的`color`转为`ColorDrawable`.通过静态方法+`@BindingConversion`
+而因为background的需要的类型是`Drawable`，所以会将`int`型的`color`转为`ColorDrawable`.通过静态方法+`@BindingConversion`，会在找不到自身类中的方法时，寻找带有`@BindingConversion`的方法
 
 ```java
 @BindingConversion
