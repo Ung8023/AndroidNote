@@ -193,5 +193,4 @@ public static ColorDrawable convertColorToDrawable(int color) {
    android:background="@{isError ? @drawable/error : @color/white}"
    android:layout_width="wrap_content"
    android:layout_height="wrap_content"/>
-
 ```
