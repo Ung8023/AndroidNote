@@ -148,4 +148,23 @@ ObservableArrayList<Object> user = new ObservableArrayList<>();
 user.add("Google");
 user.add("Inc.");
 user.add(17);
+```  
+
+在Layout中使用:  
+
+```xml
+<data>
+    <import type="android.databinding.ObservableList"/>
+    <import type="com.example.my.app.Fields"/>
+    <variable name="user" type="ObservableList&lt;Object&gt;"/>
+</data>
+…
+<TextView
+   android:text='@{user[Fields.LAST_NAME]}'
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"/>
+<TextView
+   android:text='@{String.valueOf(1 + (Integer)user[Fields.AGE])}'
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"/>
 ```
