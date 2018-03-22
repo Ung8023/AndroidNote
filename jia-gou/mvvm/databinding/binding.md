@@ -20,3 +20,7 @@ MyLayoutBinding binding = MyLayoutBinding.bind(viewRoot);
 
 #### 第三种情况(不能预先知道Binding,)
 通过`DataBindingUtils`进行渲染.
+
+```java
+
+```
