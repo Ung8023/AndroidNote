@@ -199,7 +199,7 @@ public final TextView lastName;
 所有的变量，会提供访问方法(getters 和 setters)
 
 ### ViewStubs
-对于`ViewStubs`这种特殊的`View`，由于他们从不可见到可见之后，ViewStub就消失了，所以在DataBinding中，也是如此。但是DataBinding为了提供对ViewStub的访问，提供了一个`ViewStubProxy`,通过`ViewStubProxy`，可以对它添加`OnInflateListener`，它将会在ViewStub被渲染之后立刻调用。
+对于`ViewStubs`这种特殊的`View`，由于他们从不可见到可见之后，`ViewStub`就消失了，所以在`DataBinding`中，也是如此。但是`DataBinding`为了提供对`ViewStub`的访问，提供了一个`ViewStubProxy`,通过`ViewStubProxy`，可以对它添加`OnInflateListener`，它将会在ViewStub被渲染之后立刻调。这样可以通过`ViewStubProxy`访问渲染的`View`;
 
 ```java
 ViewStubProxy viewStubProxy;
