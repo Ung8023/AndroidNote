@@ -22,5 +22,8 @@ MyLayoutBinding binding = MyLayoutBinding.bind(viewRoot);
 通过`DataBindingUtils`进行渲染.
 
 ```java
+ViewDataBinding binding = DataBindingUtil.inflate(LayoutInflater, layoutId,
+    parent, attachToParent);
+ViewDataBinding binding = DataBindingUtil.bindTo(viewRoot, layoutId);
 
 ```
