@@ -64,4 +64,8 @@ private static class User extends BaseObservable {
 ```
 
 #### ObservableFields
-如果你发现通过`ObservableObject`定义数据类有些麻烦，那么，`ObservableFields`，就是更好的选择。
+如果你发现通过`ObservableObject`定义数据类有些麻烦，那么，`ObservableFields`，就是更好的选择。不单单有`ObservableFields`,DataBinding还对所有基本数据类型做出了封装，可以直接使用.
+
+```
+
+```
