@@ -66,6 +66,22 @@ private static class User extends BaseObservable {
 #### ObservableFields
 如果你发现通过`ObservableObject`定义数据类有些麻烦，那么，`ObservableFields`，就是更好的选择。不单单有`ObservableFields`,DataBinding还对所有基本数据类型做出了封装，可以直接使用.
 
-```
+```java
+public class UserInfo {
+    public final ObservableField<String> firstName = new ObservableField<>();
+    public final ObservableField<String> lastName = new ObservableField<>();
+
+    public final ObservableBoolean isSuperMan = new ObservableBoolean();
+    public final ObservableByte bookNum = new ObservableByte();
+    public final ObservableShort bookFans = new ObservableShort();
+    public final ObservableInt age = new ObservableInt();
+    public final ObservableLong money = new ObservableLong();
+    public final ObservableChar sex = new ObservableChar();
+    public final ObservableFloat bankMoney = new ObservableFloat();
+    public final ObservableDouble dkMoney = new ObservableDouble();
+
+    public final ObservableArrayList<String> children = new ObservableArrayList<>();
+    public final ObservableMap<String, Integer> map = new ObservableArrayMap();
+}
 
 ```
