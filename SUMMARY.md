@@ -10,4 +10,5 @@
   * [DataBinding](jia-gou/mvvm/databinding.md)
     * [Layouts](jia-gou/mvvm/databinding/layouts.md)
     * [Data](jia-gou/mvvm/databinding/data.md)
+    * [Binding](jia-gou/mvvm/databinding/binding.md)
 
