@@ -197,3 +197,16 @@ public static ColorDrawable convertColorToDrawable(int color) {
 
 #### EG
 将一个`User`类传入，根据`user`返回不同的`Background`
+
+```xml
+<data>
+    <variable name="user" type="com.xx.User"/>
+</data>
+
+<View
+   android:background="@{user}"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"/>
+```
+
+
