@@ -28,4 +28,4 @@ public interface ClickListener {
 ```
 
 ### 逻辑处理
-在View中，通过Controller,Presenter或者ViewModel处理逻辑，逻辑结束，将结果返回到`Activity/Fragment`，通知View进行更新。
+在View中，通过Controller,Presenter或者ViewModel处理逻辑，逻辑结束，将结果返回到`Activity/Fragment`，通知View进行更新。当然如果使用观察者模式，可以在数据变化时，自动更新UI，最终原理是一样的
