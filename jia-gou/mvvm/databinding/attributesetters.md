@@ -9,3 +9,4 @@
     app:scrimColor="@{@color/scrim}"
     app:drawerListener="@{fragment.drawerListener}"/>
 ```
+
