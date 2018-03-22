@@ -14,6 +14,8 @@
     <View 
     ...
     android:onClick="@{() -> listener.onClick()}"
+    //或者带参数
+    android:onClick="@{view -> listener.onClick(view, data)}"
     />
 </data>
 ```
