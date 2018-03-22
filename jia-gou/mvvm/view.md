@@ -27,4 +27,4 @@ public interface ClickListener {
 }
 ```
 
-### 在View中，通过Controller,Presenter或者ViewModel
+### 在View中，通过Controller,Presenter或者ViewModel处理逻辑
