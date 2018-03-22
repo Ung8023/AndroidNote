@@ -68,4 +68,7 @@ public class MyActivity extends AppCompatActivity {
 ```
 
 ### ViewModel生命周期
+![](/assets/viewmodel生命周期.png)
 
+### ViewModel工作原理图
+![](/assets/viewmodel使用原理图.png)
