@@ -94,3 +94,5 @@ public class User {
     user.firstName.set("ManCoffee");
     int age = user.age.get();
     ```
+
+2. 目前对于`ObservableList`只有实现类`ObservableArrayList`,而对于`ObservableMap`，只有实现类`ObservableArrayMap`
