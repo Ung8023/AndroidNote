@@ -1,4 +1,5 @@
 ### 说明
+通过Layouts Data Binding，已经基本可以进行开发了，如果想玩点更高级的操作，请往下看。
 当一个`value`改变时，`binding`必须调用`set`方法来通知**View**更改.**DataBinding**提供一些方式来自定义设置数据方法。
 
 ### 自动设置
