@@ -33,7 +33,6 @@ ViewDataBinding binding = DataBindingUtil.bindTo(viewRoot, layoutId);
 
 ```java
 public class AActivity extends AppCompatActivity {
-
     ActivityABinding dataBinding;
 
     @Override
