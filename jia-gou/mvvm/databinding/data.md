@@ -8,7 +8,23 @@
 
 1. 定义POJO
 
+    ```java
+    public class User {
+        private int age;
+        private String name;
+        
+        getters and setters
+    }
+    ```
 
+2. 使用POJO
+    
+    ```java
+    <data>
+        <variable name="user" type="com.sample.User"/>
+    </data>
+    ```
 
+### 定义可观察的Object
 
 
