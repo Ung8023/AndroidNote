@@ -51,3 +51,4 @@ public static void loadImage(ImageView view, String url, Drawable error) {
 }
 ```
 
+2. 在Layout中引用
