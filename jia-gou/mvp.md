@@ -3,4 +3,4 @@
 
 1. Model: 数据层
 2. View: 视图层
-3. Presenter: 
+3. Presenter: 控制层
