@@ -153,8 +153,8 @@ user.add(17);
 ```java
 public class Fields {
     public static final int Last_NAME = 0;
-    public static final int FIRST_NAME = 0;
-    public static final int AGE = 0;
+    public static final int FIRST_NAME = 1;
+    public static final int AGE = 2;
 }
 ```
 
