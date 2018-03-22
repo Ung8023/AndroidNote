@@ -139,3 +139,8 @@ user.put("age", 17);
    android:layout_width="wrap_content"
    android:layout_height="wrap_content"/>
 ```
+
+##### ObservableList
+如果key是integer
+类型，那么，你就可以使用`ObservableArrayMap`
+
