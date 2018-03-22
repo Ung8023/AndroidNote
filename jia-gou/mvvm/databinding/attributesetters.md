@@ -8,5 +8,4 @@
     android:layout_height="wrap_content"
     app:scrimColor="@{@color/scrim}"
     app:drawerListener="@{fragment.drawerListener}"/>
-
 ```
