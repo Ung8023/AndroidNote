@@ -45,3 +45,21 @@ public class AActivity extends AppCompatActivity {
 
 2. 在Fragment中使用:
 
+```java
+public class AFragment extends Fragment {
+
+    private FragmentABinding mViewDataBinding;
+
+    public static StatisticsFragment newInstance() {
+        return new StatisticsFragment();
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        mViewDataBinding = DataBindingUtil.inflate(
+                inflater, R.layout.fragment_a, container, false);
+        return mViewDataBinding.getRoot();
+    }
+```
