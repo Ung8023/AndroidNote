@@ -26,3 +26,11 @@ ViewDataBinding binding = DataBindingUtil.inflate(LayoutInflater, layoutId,
     parent, attachToParent);
 ViewDataBinding binding = DataBindingUtil.bindTo(viewRoot, layoutId);
 ```
+
+#### EG(示例):
+
+1. 在Activity中使用:
+
+```java
+
+```
