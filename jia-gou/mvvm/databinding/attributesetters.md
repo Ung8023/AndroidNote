@@ -211,5 +211,12 @@ public static ColorDrawable convertColorToDrawable(int color) {
 
 **在View中setBackgroud(User user)方法，所以会寻找带`@BindingConversion`标记的方法**
 
-
+```java
+public class Attr {
+    @BindingConversion
+    public static ColorDrawable convertColorToDrawable(int color) {
+        return new ColorDrawable(color);
+    }
+}
+```
 
