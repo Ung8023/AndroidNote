@@ -42,9 +42,10 @@ public static void setPaddingLeft(View view, int padding) {
 ```
 
 #### 案例 ImageView的图片绑定
-```
+```java
 @BindingAdapter({"bind:imageUrl", "bind:error"})
 public static void loadImage(ImageView view, String url, Drawable error) {
    Picasso.with(view.getContext()).load(url).error(error).into(view);
 }
 ```
+
