@@ -4,3 +4,4 @@
 ### 获取View
 `DataBinding`中生成了 `public final`修饰的View，可以通过`ViewDataBinding(生成的各种子类)`对象直接引用。
 
+### 
