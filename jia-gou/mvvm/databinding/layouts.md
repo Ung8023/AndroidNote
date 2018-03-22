@@ -250,6 +250,30 @@ android:text="@{map[`firstName`}"
 android:text="@{map['firstName']}"
 ```
 
+### 引用集合
+
+使用集合时，如果定义带泛型的集合需要使用`&lt; 与 &gt; 分别代表< 与 >`,访问数据时，通过`[]`访问：
+
+```xml
+<data>
+    <import type="android.util.SparseArray"/>
+    <import type="java.util.Map"/>
+    <import type="java.util.List"/>
+    <variable name="list" type="List&lt;String&gt;"/>
+    <variable name="sparse" type="SparseArray&lt;String&gt;"/>
+    <variable name="map" type="Map&lt;String, String&gt;"/>
+    <variable name="index" type="int"/>
+    <variable name="key" type="String"/>
+</data>
+…
+android:text="@{list[index]}"
+…
+android:text="@{sparse[index]}"
+…
+android:text="@{map[key]}"
+
+```
+
 ### 引用资源
 
 #### 直接引用
