@@ -22,6 +22,7 @@
 ```
 
 ```
-public void ClickListener {
+public interface ClickListener {
+    void onClick(View view, Data data);
 }
 ```
