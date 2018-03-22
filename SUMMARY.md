@@ -12,4 +12,5 @@
     * [Data](jia-gou/mvvm/databinding/data.md)
     * [Binding](jia-gou/mvvm/databinding/binding.md)
     * [AttributeSetters And Converters](jia-gou/mvvm/databinding/attributesetters.md)
+  * [View](jia-gou/mvvm/view.md)
 
