@@ -163,3 +163,27 @@ public class RecyclerViewAdapter<T> extends RecyclerView.Adapter<RecyclerViewAda
     }
 }
 ```
+
+### 带id的View
+带id的View会在Binding文件中，生成一个`public final`修饰的成员
+
+```xml
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+   <data>
+       <variable name="user" type="com.example.User"/>
+   </data>
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@{user.firstName}"
+   android:id="@+id/firstName"/>
+       <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@{user.lastName}"
+  android:id="@+id/lastName"/>
+   </LinearLayout>
+</layout>
+```
