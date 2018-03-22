@@ -71,3 +71,9 @@ public static void setPaddingLeft(View view, int oldPadding, int newPadding) {
    }
 }
 ```
+
+#### 事件处理只能通过接口或者只含有一个抽象方法的抽象类
+
+```java
+
+```
