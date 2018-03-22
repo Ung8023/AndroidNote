@@ -209,4 +209,7 @@ public static ColorDrawable convertColorToDrawable(int color) {
    android:layout_height="wrap_content"/>
 ```
 
+**在View中setBackgroud(User user)方法，所以会寻找带`@BindingConversion`标记的方法**
+
+
 
