@@ -10,4 +10,4 @@
 #### 说明
 个人认为，以前并不会把`Controller`单独建立类，直接将`Fragment`与`Activity`作为`Controller`，所以从`Model`回来，到底是到`View上`还是`Controller`上？
 
-我以为，从`Model`回来，最终是`Controller`的逻辑结束过程，由此引发`View`的改变则是`Controller`通知View变化.
+我以为，从`Model`回来，最终是`Controller`的逻辑结束过程，由此引发`View`的改变则是`Controller`通知`View`变化.
