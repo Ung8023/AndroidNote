@@ -47,13 +47,8 @@ public class AActivity extends AppCompatActivity {
 
 ```java
 public class AFragment extends Fragment {
-
     private FragmentABinding mViewDataBinding;
-
-    public static StatisticsFragment newInstance() {
-        return new StatisticsFragment();
-    }
-
+    
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
