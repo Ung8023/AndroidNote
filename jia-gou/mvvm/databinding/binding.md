@@ -58,3 +58,51 @@ public class AFragment extends Fragment {
         return mViewDataBinding.getRoot();
     }
 ```
+
+3. 在ListView的Adapter中使用
+
+```java
+public class HomeAdapter<T> extends BaseAdapter {
+
+    private List<T> dataList;
+    private @LayoutRes int layoutId;
+    private int variableId;
+    LayoutInflater inflater;
+
+    public HomeAdapter(List<T> dataList, @LayoutRes int layoutId, int resId) {
+        this.dataList = dataList;
+        this.layoutId = layoutId;
+        this.variableId = resId;
+    }
+
+    @Override
+    public int getCount() {
+        return dataList != null ? dataList.size() : 0;
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return dataList.get(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+        ViewDataBinding dataBinding;
+        if (inflater == null) {
+            inflater = LayoutInflater.from(parent.getContext());
+        }
+        if (convertView == null) {
+            dataBinding = DataBindingUtil.inflate(inflater, layoutId, parent, false);
+        }else{
+            dataBinding = DataBindingUtil.getBinding(convertView);
+        }
+        dataBinding.setVariable(variableId, dataList.get(position));
+        return dataBinding.getRoot();
+    }
+}
+```
