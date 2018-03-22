@@ -141,6 +141,5 @@ user.put("age", 17);
 ```
 
 ##### ObservableList
-如果key是integer
-类型，那么，你就可以使用`ObservableArrayMap`
+如果key是`integer`类型，那么，你就可以使用`ObservableArrayList`
 
