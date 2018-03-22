@@ -98,5 +98,17 @@ public class User {
 2. 目前对于`ObservableList`只有实现类`ObservableArrayList`,而对于`ObservableMap`，只有实现类`ObservableArrayMap`
 
 #### ObservableCollections
+前提，数据定义:  
+
+```java
+private static class User {
+   public final ObservableField<String> firstName =
+       new ObservableField<>();
+   public final ObservableField<String> lastName =
+       new ObservableField<>();
+   public final ObservableInt age = new ObservableInt();
+}
+```
+
 
 `Observable collections` 允许使用key来访问数据，
