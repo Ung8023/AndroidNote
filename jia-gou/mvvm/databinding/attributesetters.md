@@ -215,6 +215,7 @@ public static ColorDrawable convertColorToDrawable(int color) {
 public class Attr {
     @BindingConversion
     public static ColorDrawable convertColorToDrawable(int color) {
+        //此处可以返回各种Drawable
         return new ColorDrawable(color);
     }
 }
