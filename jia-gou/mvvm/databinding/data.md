@@ -37,4 +37,6 @@
 制作`Observable Objects`有两种方式:
 
 1. 实现 `android.databinding.Observable`接口
-2. 继承 `android.databinding.BaseObservable` 类
+2. 继承 `android.databinding.BaseObservable` 类(此类是`DataBinding`提供的一个已经对`Observable接口`基础实现的类)
+
+
