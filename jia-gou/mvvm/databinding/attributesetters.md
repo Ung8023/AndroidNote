@@ -103,3 +103,9 @@ public interface OnViewAttachedToWindow {
     void onViewAttachedToWindow(View v);
 }
 ```
+
+因为改变一个监听器会影响另外的监听器，所以我们必须要创建三个BindingAdapters，两个分别对应两种属性，另外一对应为全包含的属性
+
+```java
+
+```
