@@ -109,3 +109,9 @@ public class HomeAdapter<T> extends BaseAdapter {
     }
 }
 ```
+
+4. 在RecyclerView Adapter中使用 
+
+```java
+
+```
