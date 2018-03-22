@@ -107,5 +107,48 @@ public interface OnViewAttachedToWindow {
 因为改变一个监听器会影响另外的监听器，所以我们必须要创建三个BindingAdapters，两个分别对应两种属性，另外一对应为全包含的属性
 
 ```java
+@BindingAdapter("android:onViewAttachedToWindow")
+public static void setListener(View view, OnViewAttachedToWindow attached) {
+    setListener(view, null, attached);
+}
 
+@BindingAdapter("android:onViewDetachedFromWindow")
+public static void setListener(View view, OnViewDetachedFromWindow detached) {
+    setListener(view, detached, null);
+}
+
+@BindingAdapter({"android:onViewDetachedFromWindow", "android:onViewAttachedToWindow"})
+public static void setListener(View view, final OnViewDetachedFromWindow detach,
+        final OnViewAttachedToWindow attach) {
+    if (VERSION.SDK_INT >= VERSION_CODES.HONEYCOMB_MR1) {
+        final OnAttachStateChangeListener newListener;
+        if (detach == null && attach == null) {
+            newListener = null;
+        } else {
+            newListener = new OnAttachStateChangeListener() {
+                @Override
+                public void onViewAttachedToWindow(View v) {
+                    if (attach != null) {
+                        attach.onViewAttachedToWindow(v);
+                    }
+                }
+
+                @Override
+                public void onViewDetachedFromWindow(View v) {
+                    if (detach != null) {
+                        detach.onViewDetachedFromWindow(v);
+                    }
+                }
+            };
+        }
+        final OnAttachStateChangeListener oldListener = ListenerUtil.trackListener(view,
+                newListener, R.id.onAttachStateChangeListener);
+        if (oldListener != null) {
+            view.removeOnAttachStateChangeListener(oldListener);
+        }
+        if (newListener != null) {
+            view.addOnAttachStateChangeListener(newListener);
+        }
+    }
+}
 ```
