@@ -194,3 +194,6 @@ public static ColorDrawable convertColorToDrawable(int color) {
    android:layout_width="wrap_content"
    android:layout_height="wrap_content"/>
 ```
+
+#### EG
+将一个`User`类传入，根据`user`返回不同的`Background`
