@@ -25,5 +25,4 @@ MyLayoutBinding binding = MyLayoutBinding.bind(viewRoot);
 ViewDataBinding binding = DataBindingUtil.inflate(LayoutInflater, layoutId,
     parent, attachToParent);
 ViewDataBinding binding = DataBindingUtil.bindTo(viewRoot, layoutId);
-
 ```
