@@ -8,4 +8,4 @@
 ### MVP工作原理
 ![](/assets/MVP基础架构.png)
 
-### MVP实现机理
+### MVP实现UML
