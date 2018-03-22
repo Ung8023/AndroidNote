@@ -6,3 +6,6 @@
 3. Presenter: 控制层(与Controller有什么区别？)
 
 ### MVP工作原理
+![](/assets/MVP基础架构.png)
+
+### MVP实现机理
