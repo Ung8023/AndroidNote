@@ -167,4 +167,5 @@ public static void setListener(View view, final OnViewDetachedFromWindow detach,
 
 userMap返回一个对象，而且这个对象会被自动转为`setText(CharSequence)`形参需要的类型。**当参数类型可能混乱时，我们需要在表达式中手动转换**。
 
+### Custom Conversions
 
