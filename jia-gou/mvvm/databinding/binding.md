@@ -42,3 +42,6 @@ public class AActivity extends AppCompatActivity {
     }
 }
 ```
+
+2. 在Fragment中使用:
+
