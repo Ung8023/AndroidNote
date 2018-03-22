@@ -71,7 +71,9 @@ public class HomeAdapter<T> extends BaseAdapter {
 
     public HomeAdapter(List<T> dataList, @LayoutRes int layoutId, int resId) {
         this.dataList = dataList;
+        //layoutId 为对应的布局R.layout.xxxx
         this.layoutId = layoutId;
+        //variableId 为DataBinding生成的变量Id，BR.xxx
         this.variableId = resId;
     }
 
