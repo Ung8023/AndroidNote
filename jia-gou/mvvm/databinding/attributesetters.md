@@ -51,4 +51,9 @@ public static void loadImage(ImageView view, String url, Drawable error) {
 }
 ```
 
-2. 在Layout中引用
+2.在Layout中引用  
+
+```xml
+<ImageView app:imageUrl="@{venue.imageUrl}"
+app:error="@{@drawable/venueError}"/>
+```
