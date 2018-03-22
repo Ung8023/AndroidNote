@@ -5,10 +5,15 @@
 ### 创建Binding对象
 前面`Layouts`中提到过，可以对`Binding`重新命名，如果没有重新命名，会按照默认规则自动生成，那个类就是我们要使用的类。获取`Binding`对象有集中种情况。
 
-#### 第一种情况
-在知道生成的Binding类名的情况下： 
+#### 第一种情况(在知道生成的Binding类名的情况下)
 
 ```java
 MyLayoutBinding binding = MyLayoutBinding.inflate(layoutInflater);
 MyLayoutBinding binding = MyLayoutBinding.inflate(layoutInflater, viewGroup, false);
+```
+
+#### 第二种情况(如果Layout已经通过别的方式渲染完毕)
+
+```java
+MyLayoutBinding binding = MyLayoutBinding.bind(viewRoot);
 ```
