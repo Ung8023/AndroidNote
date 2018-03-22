@@ -27,3 +27,18 @@
                       method = "setImageTintList"),
 })
 ```
+
+### 自定义Setters
+一些属性需要自定义绑定逻辑
+#### android 属性已经有对应的BindAdapters
+```java
+@BindingAdapter("android:paddingLeft")
+public static void setPaddingLeft(View view, int padding) {
+   view.setPadding(padding,
+                   view.getPaddingTop(),
+                   view.getPaddingRight(),
+                   view.getPaddingBottom());
+}
+```
+
+#### 案例 ImageView的图片绑定
