@@ -80,7 +80,7 @@ public class User {
     public final ObservableFloat bankMoney = new ObservableFloat();
     public final ObservableDouble dkMoney = new ObservableDouble();
 
-    public final ObservableArrayList<String> children = new ObservableArrayList<>();
+    public final ObservableList<String> children = new ObservableArrayList<>();
     public final ObservableMap<String, Integer> map = new ObservableArrayMap();
 }
 
