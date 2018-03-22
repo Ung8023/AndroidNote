@@ -32,5 +32,14 @@ ViewDataBinding binding = DataBindingUtil.bindTo(viewRoot, layoutId);
 1. 在Activity中使用:
 
 ```java
+public class AActivity extends AppCompatActivity {
 
+    ActivityABinding dataBinding;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        dataBinding = DataBindingUtil.setContentView(this, R.layout.activity_a);
+    }
+}
 ```
