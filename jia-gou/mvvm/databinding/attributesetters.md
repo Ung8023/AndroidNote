@@ -88,3 +88,18 @@ public static void setOnLayoutChangeListener(View view, View.OnLayoutChangeListe
     }
 }
 ```
+
+#### 当一个监听器有多个方法时，必须将它分割成多个监听器
+比如`View.onAttachStateChangeListener`有两个方法:`onViewAttachedToWindow()`，`onViewDetachedToWindow`,我们需要创建两个接口来区分属性和事件。
+
+```java
+@TargetApi(VERSION_CODES.HONEYCOMB_MR1)
+public interface OnViewDetachedFromWindow {
+    void onViewDetachedFromWindow(View v);
+}
+
+@TargetApi(VERSION_CODES.HONEYCOMB_MR1)
+public interface OnViewAttachedToWindow {
+    void onViewAttachedToWindow(View v);
+}
+```
