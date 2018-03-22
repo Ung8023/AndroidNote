@@ -64,4 +64,4 @@ private static class User extends BaseObservable {
 ```
 
 #### ObservableFields
-如果你发现通过`ObservableObject`定义数据类有些麻烦，那么，`ObservableFields`，就是更好的选择
+如果你发现通过`ObservableObject`定义数据类有些麻烦，那么，`ObservableFields`，就是更好的选择。
