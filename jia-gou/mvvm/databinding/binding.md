@@ -215,5 +215,25 @@ viewStubProxy.setOnInflateListener(new ViewStub.OnInflateListener() {
 viewStubProxy.getRoot().setBackground(new ColorDrawable(Color.RED));
 ```
 
-### 
+### 其他的绑定
+#### 动态变量
+有些时候并不能指定特定`Binding` 类,比如在`RecyclerView.Adapter`中，可能存在多种`View`，也就对应着多种`Binding`.可以通过指定`variable`形式;  
+
+```java
+public void onBindViewHolder(BindingHolder holder, int position) {
+   final T item = mItems.get(position);
+   holder.getBinding().setVariable(BR.item, item);
+   holder.getBinding().executePendingBindings();
+}
+```
+
+#### 即时绑定
+正常情况下，当变量或者被观察的数据改变时，`binding`将会在下一帧之前作出更改，但是有时需要即时作出更改.通过以下方式:  
+
+```java
+android.databinding.ViewDataBinding.executePendingBindings()
+```
+
+#### Background
+只要不是集合，在后台更改数据时，binding会本地化变量来避免并发问题。
 
