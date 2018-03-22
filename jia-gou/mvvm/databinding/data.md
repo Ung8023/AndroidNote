@@ -62,3 +62,6 @@ private static class User extends BaseObservable {
    }
 }
 ```
+
+#### ObservableFields
+
