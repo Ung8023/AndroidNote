@@ -88,4 +88,8 @@ public class User {
 
 注意点：  
 
-1. 因为`Observable对应的类型`，是对基本数据的包装，所以可以直接将变量定义为`final`
+1. 因为`Observable对应的类型`，是对基本数据的包装，所以可以直接将变量定义为`final` 通过对应的`get`与`set`方法进行操作
+    
+    ```java
+    
+    ```
