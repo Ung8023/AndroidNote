@@ -113,5 +113,53 @@ public class HomeAdapter<T> extends BaseAdapter {
 4. 在RecyclerView Adapter中使用 
 
 ```java
+public class RecyclerViewAdapter<T> extends RecyclerView.Adapter<RecyclerViewAdapter.ItemViewHolder>{
 
+    private List<T> mDatas;
+    protected @LayoutRes int layoutId;
+    protected int variableId;
+
+    public RecyclerViewAdapter(List<T> datas, @LayoutRes int layoutId, int variableId) {
+        this.mDatas = datas;
+        //layoutId 为对应的布局R.layout.xxxx
+        this.layoutId = layoutId;
+        //variableId 为DataBinding生成的变量Id，BR.xxx
+        this.variableId = variableId;
+    }
+
+    @Override
+    public ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(layoutId, parent, false);
+        return new ItemViewHolder(v);
+    }
+
+    @Override
+    public void onBindViewHolder(ItemViewHolder holder, int position) {
+        holder.setBinding(variableId, mDatas.get(position));
+    }
+
+    @Override
+    public int getItemCount() {
+        if (mDatas == null) {
+            return 0;
+        }
+        return mDatas.size();
+    }
+
+    public static class ItemViewHolder extends RecyclerView.ViewHolder{
+
+        private ViewDataBinding dataBinding;
+
+        public ItemViewHolder(View itemView) {
+            super(itemView);
+            dataBinding = DataBindingUtil.bind(itemView);
+        }
+
+        public ItemViewHolder setBinding(int variableId , Object object){
+            dataBinding.setVariable(variableId , object);
+            dataBinding.executePendingBindings();
+            return this;
+        }
+    }
+}
 ```
