@@ -34,4 +34,7 @@
 * Observable Collections
 
 #### Observable Objects
+制作`Observable Objects`有两种方式:
 
+1. 实现 `android.databinding.Observable`接口
+2. 继承 `android.databinding.BaseObservable` 类
