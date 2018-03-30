@@ -9,4 +9,8 @@
 3. 4.4 中不存在任何关于选择文件的api，连`@hide`的也没有
 
 ### 解决方案:
-在WebChromeClient
+在WebChromeClient中添加对应方法： 
+
+```java
+
+```
