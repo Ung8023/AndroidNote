@@ -12,5 +12,29 @@
 在WebChromeClient中添加对应方法： 
 
 ```java
+// For Android < 3.0
+public void openFileChooser(ValueCallback<Uri> valueCallback) {
+    uploadMessage = valueCallback;
+    openImageChooserActivity();
+}
 
+// For Android  >= 3.0
+public void openFileChooser(ValueCallback valueCallback, String acceptType) {
+    uploadMessage = valueCallback;
+    openImageChooserActivity();
+}
+
+//For Android  >= 4.1
+public void openFileChooser(ValueCallback<Uri> valueCallback, String acceptType, String capture) {
+    uploadMessage = valueCallback;
+    openImageChooserActivity();
+}
+
+// For Android >= 5.0
+@Override
+public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback, WebChromeClient.FileChooserParams fileChooserParams) {
+    uploadMessageAboveL = filePathCallback;
+    openImageChooserActivity();
+    return true;
+}
 ```
