@@ -39,7 +39,16 @@ public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathC
 }
 ```
 
+##### 如果有混淆处理，需要取消对`openFileChooser`的混淆
+```
+-keepclassmembers class * extends android.webkit.WebChromeClient{
+        public void openFileChooser(...);
+       }
+```
+
+
 #### 2.在Activity中调起本地选择器
+
 ```java
 private void openImageChooserActivity() {
     Intent i = new Intent(Intent.ACTION_GET_CONTENT);
