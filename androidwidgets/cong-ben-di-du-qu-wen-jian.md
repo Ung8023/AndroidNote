@@ -4,5 +4,6 @@
 ![](/assets/html选取文件.png)
 
 ### 原生中存在的问题
-1. 5.0 以前不存选择文件的公开API
+1. 5.0 以前不存选择文件的公开API,只存在`@hide`的api
 2. 5.0 以后可已在ChromeClient中重写`onShowFileChooser`
+3. 4.4 中不存在任何关于选择文件的api，连`@hide`的也没有
