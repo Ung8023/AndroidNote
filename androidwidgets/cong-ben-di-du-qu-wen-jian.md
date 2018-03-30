@@ -39,3 +39,4 @@ public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathC
 }
 ```
 
+#### 2.在Activity中调起本地选择器
