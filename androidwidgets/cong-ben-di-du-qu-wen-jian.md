@@ -17,7 +17,7 @@
 // For Android < 3.0
 public void openFileChooser(ValueCallback<Uri> valueCallback) {
     uploadMessage = valueCallback;
-    openImageChooserActivity();
+    openFileChooserActivity();
 }
 
 // For Android  >= 3.0
