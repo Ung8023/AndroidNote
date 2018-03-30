@@ -41,29 +41,10 @@ public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathC
 
 #### 2.在Activity中调起本地选择器
 ```java
-// For Android < 3.0
-        public void openFileChooser(ValueCallback<Uri> valueCallback) {
-            uploadMessage = valueCallback;
-            openImageChooserActivity();
-        }
-
-        // For Android  >= 3.0
-        public void openFileChooser(ValueCallback valueCallback, String acceptType) {
-            uploadMessage = valueCallback;
-            openImageChooserActivity();
-        }
-
-        //For Android  >= 4.1
-        public void openFileChooser(ValueCallback<Uri> valueCallback, String acceptType, String capture) {
-            uploadMessage = valueCallback;
-            openImageChooserActivity();
-        }
-
-        // For Android >= 5.0
-        @Override
-        public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback, WebChromeClient.FileChooserParams fileChooserParams) {
-            uploadMessageAboveL = filePathCallback;
-            openImageChooserActivity();
-            return true;
-        }
+Intent i = new Intent(Intent.ACTION_GET_CONTENT);
+i.addCategory(Intent.CATEGORY_OPENABLE);
+i.setType("image/*");
+if (i.resolveActivity(getPackageManager()) != null) {
+    startActivityForResult(Intent.createChooser(i, "Image Chooser"), FILE_CHOOSER_RESULT_CODE);
+}
 ```
