@@ -1,7 +1,7 @@
 ### WebView读取本地文件前提条件
 当加载的网页中存在 `<input type="file">` 时，点击按钮需要读取本地文件。  
 
-需要添加读取权限``
+需要添加读取权限`<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>`
 
 ![](/assets/html选取文件.png)
 
