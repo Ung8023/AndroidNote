@@ -58,6 +58,7 @@ private void openImageChooserActivity() {
     Intent i = new Intent(Intent.ACTION_GET_CONTENT);
     i.addCategory(Intent.CATEGORY_OPENABLE);
     i.setType("*/*");
+    //判断设备中是否存在处理当前intent的app
     if (i.resolveActivity(getPackageManager()) != null) {
         startActivityForResult(Intent.createChooser(i, "File Chooser"), FILE_CHOOSER_RESULT_CODE);
     }
