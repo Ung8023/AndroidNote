@@ -23,20 +23,20 @@ public void openFileChooser(ValueCallback<Uri> valueCallback) {
 // For Android  >= 3.0
 public void openFileChooser(ValueCallback valueCallback, String acceptType) {
     uploadMessage = valueCallback;
-    openImageChooserActivity();
+    openFileChooserActivity();
 }
 
 //For Android  >= 4.1
 public void openFileChooser(ValueCallback<Uri> valueCallback, String acceptType, String capture) {
     uploadMessage = valueCallback;
-    openImageChooserActivity();
+    openFileChooserActivity();
 }
 
 // For Android >= 5.0
 @Override
 public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathCallback, WebChromeClient.FileChooserParams fileChooserParams) {
     uploadMessageAboveL = filePathCallback;
-    openImageChooserActivity();
+    openFileChooserActivity();
     return true;
 }
 ```
@@ -57,7 +57,7 @@ public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathC
 private void openImageChooserActivity() {
     Intent i = new Intent(Intent.ACTION_GET_CONTENT);
     i.addCategory(Intent.CATEGORY_OPENABLE);
-    i.setType("image/*");
+    i.setType("*/*");
     if (i.resolveActivity(getPackageManager()) != null) {
         startActivityForResult(Intent.createChooser(i, "Image Chooser"), FILE_CHOOSER_RESULT_CODE);
     }
