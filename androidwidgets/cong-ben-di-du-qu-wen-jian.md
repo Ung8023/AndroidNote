@@ -9,7 +9,7 @@
 3. 4.4 中不存在任何关于选择文件的api，连`@hide`的也没有
 
 ### 解决方案:
-在WebChromeClient中添加对应方法： 
+#### 1.在WebChromeClient中添加对应方法： 
 
 ```java
 // For Android < 3.0
@@ -38,3 +38,4 @@ public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathC
     return true;
 }
 ```
+
