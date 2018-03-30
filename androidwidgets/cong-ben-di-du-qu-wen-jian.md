@@ -111,7 +111,7 @@ private void onActivityResultAboveL(int requestCode, int resultCode, Intent inte
 
 ### 完整源码
 ```java
-public class LoadImageFromLocalActivity extends AppCompatActivity {
+public class LoadFileFromLocalActivity extends AppCompatActivity {
 
     WebView webView;
     private ValueCallback<Uri> uploadMessage;
