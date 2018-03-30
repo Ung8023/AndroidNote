@@ -41,10 +41,12 @@ public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathC
 
 #### 2.在Activity中调起本地选择器
 ```java
-Intent i = new Intent(Intent.ACTION_GET_CONTENT);
-i.addCategory(Intent.CATEGORY_OPENABLE);
-i.setType("image/*");
-if (i.resolveActivity(getPackageManager()) != null) {
-    startActivityForResult(Intent.createChooser(i, "Image Chooser"), FILE_CHOOSER_RESULT_CODE);
+private void openImageChooserActivity() {
+    Intent i = new Intent(Intent.ACTION_GET_CONTENT);
+    i.addCategory(Intent.CATEGORY_OPENABLE);
+    i.setType("image/*");
+    if (i.resolveActivity(getPackageManager()) != null) {
+        startActivityForResult(Intent.createChooser(i, "Image Chooser"), FILE_CHOOSER_RESULT_CODE);
+    }
 }
 ```
