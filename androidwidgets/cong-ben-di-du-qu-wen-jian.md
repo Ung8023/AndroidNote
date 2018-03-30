@@ -40,6 +40,8 @@ public boolean onShowFileChooser(WebView webView, ValueCallback<Uri[]> filePathC
 ```
 
 ##### 如果有混淆处理，需要取消对`openFileChooser`的混淆
+因为这个方法是`@hide`的，所以编译的SDK中没有，如果不做混淆处理，会将此方法混淆。
+
 ```
 -keepclassmembers class * extends android.webkit.WebChromeClient{
         public void openFileChooser(...);
