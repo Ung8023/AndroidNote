@@ -59,7 +59,7 @@ private void openImageChooserActivity() {
     i.addCategory(Intent.CATEGORY_OPENABLE);
     i.setType("*/*");
     if (i.resolveActivity(getPackageManager()) != null) {
-        startActivityForResult(Intent.createChooser(i, "Image Chooser"), FILE_CHOOSER_RESULT_CODE);
+        startActivityForResult(Intent.createChooser(i, "File Chooser"), FILE_CHOOSER_RESULT_CODE);
     }
 }
 ```
