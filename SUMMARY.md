@@ -20,3 +20,7 @@
 * [WebView](androidwidgets/webview.md)
   * [从本地读取文件](androidwidgets/cong-ben-di-du-qu-wen-jian.md)
 
+## Android自动化测试
+
+* [Monkey](monkey.md)
+
