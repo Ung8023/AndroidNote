@@ -68,5 +68,30 @@ public void release() {
 
 ### 使用Assert验证结果
 ```java
+assertEquals(expected, actual)
+验证expected的值跟actual是一样的，如果是一样的话，测试通过，不然的话，测试失败。如果传入的是object，那么这里的对比用的是equals()
 
+assertEquals(expected, actual, tolerance)
+这里传入的expected和actual是float或double类型的，大家知道计算机表示浮点型数据都有一定的偏差，所以哪怕理论上他们是相等的，但是用计算机表示出来则可能不是，所以这里运行传入一个偏差值。如果两个数的差异在这个偏差值之内，则测试通过，否者测试失败。
+
+assertTrue(boolean condition)
+验证contidion的值是true
+
+assertFalse(boolean condition)
+验证contidion的值是false
+
+assertNull(Object obj)
+验证obj的值是null
+
+assertNotNull(Object obj)
+验证obj的值不是null
+
+assertSame(expected, actual)
+验证expected和actual是同一个对象，即指向同一个对象
+
+assertNotSame(expected, actual)
+验证expected和actual不是同一个对象，即指向不同的对象
+
+fail()
+让测试方法失败
 ```
