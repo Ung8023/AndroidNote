@@ -30,6 +30,8 @@ exec app_process $base/bin com.android.commands.monkey.Monkey $*
 ```
 
 ## monkey的命令及其使用
-
+```
+$ adb shell monkey [options] <event-count>
+```
 
 
