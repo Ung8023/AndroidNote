@@ -110,3 +110,19 @@ assertNotSame(expected, actual)
 fail()
 让测试方法失败
 ```
+
+### 套件测试
+如果有多个测试类，并且想要一起执行他们@RunWith 和 @Suite 注释用来运行套件测试。
+
+
+```java
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+@RunWith(Suite.class)
+@Suite.SuiteClasses({
+   TestJunit1.class,
+   TestJunit2.class
+})
+public class JunitTestSuite {   
+}
+```
