@@ -7,5 +7,7 @@
 
 ## 使用Junit框架
 ```java
-
+testImplementation 'junit:junit:4.12'
 ```
+
+
