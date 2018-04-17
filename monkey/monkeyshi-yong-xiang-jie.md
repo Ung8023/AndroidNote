@@ -9,4 +9,7 @@ monkey可以运行在模拟器或实际设备中，它向系统发送伪随机�
 $ adb shell
 # cd /system/bin
 # monkey
+
+或
+$ adb shell /system/bin/monkey
 ```
