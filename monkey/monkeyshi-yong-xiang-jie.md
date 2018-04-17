@@ -29,5 +29,7 @@ trap "" HUP
 exec app_process $base/bin com.android.commands.monkey.Monkey $*
 ```
 
+## monkey的命令及其使用
+
 
 
