@@ -23,4 +23,5 @@
 ## Android自动化测试
 
 * [Monkey](monkey.md)
+  * [Monkey使用详解](monkey/monkeyshi-yong-xiang-jie.md)
 
