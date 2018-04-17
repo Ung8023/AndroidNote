@@ -17,4 +17,20 @@ dependencies {
 }
 ```
 
+### 使用`@Test`
+在一个测试类中，使用`@Test`来标记一个方法为测试方法。
 
+```java
+import junit.framework.Assert;
+
+import org.junit.Test;
+
+public class JavaTestDemoTest {
+    @Test
+    public void add() throws Exception {
+        JavaTestDemo demo = new JavaTestDemo();
+        int sum = demo.add(12, 12);
+        Assert.assertEquals(24, sum);
+    }
+}
+```
