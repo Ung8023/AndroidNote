@@ -97,7 +97,7 @@ public void timeOk() {
 @Test(timeout = 1000)
 public void timeFalse() {
     System.out.println("time false");
-    while (true);
+    while (true);// test timed out after 1000 milliseconds
 }
 ```
 
