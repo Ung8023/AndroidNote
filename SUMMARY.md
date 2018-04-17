@@ -23,6 +23,7 @@
 ## Android自动化测试
 
 * [单元测试](dan-yuan-ce-shi.md)
+  * [Junit](dan-yuan-ce-shi/junit.md)
 * [Monkey](monkey.md)
   * [Monkey使用详解](monkey/monkeyshi-yong-xiang-jie.md)
 
