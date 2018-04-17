@@ -78,7 +78,11 @@ public void release() {
 忽略测试，如在方法还未完善时，可利用此方法.
 
 ```java
-
+@Test
+public void add() throws Exception {
+    int sum = demo.add(12, 12);
+    Assert.assertEquals(24, sum);
+}
 ```
 
 ### 使用Assert验证结果
