@@ -7,6 +7,8 @@
 
 ## 使用Junit框架
 
+[参考文档](https://junit.org/junit4/)
+
 ### 添加junit库依赖
 
 ```java
