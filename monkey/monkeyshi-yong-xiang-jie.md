@@ -39,3 +39,10 @@ $ adb shell monkey [options] <event-count>
 ```
 $ adb shell monkey -h
 ```
+
+#### 打印日志信息
+只需要在monkey命令下加`-v`参数即可打印日志信息，可以添加多个`-v`，`-v`越多日志信息越详细，目前最多支持3个-v
+
+```
+$ adb shell monkey -v -v -v 1000
+```
