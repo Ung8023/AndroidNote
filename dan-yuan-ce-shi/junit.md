@@ -85,6 +85,22 @@ public void add() throws Exception {
 }
 ```
 
+### 时间测试
+Junit 提供了一个暂停的方便选项。如果一个测试用例比起指定的毫秒数花费了更多的时间，那么 Junit 将自动将它标记为失败。`timeout` 参数和 `@Test` 注释一起使用。
+
+```java
+@Test(timeout = 1000)
+public void timeOk() {
+    System.out.println("time ok");
+}
+
+@Test(timeout = 1000)
+public void timeFalse() {
+    System.out.println("time false");
+    while (true);
+}
+```
+
 ### 使用Assert验证结果
 ```java
 assertEquals(expected, actual)
