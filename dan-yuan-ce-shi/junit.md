@@ -48,3 +48,14 @@ public void setUp() {
 }
 
 ```
+
+### 使用`@After`
+那就是每个测试方法运行结束之后，会得到运行的方法。比如关闭流操作，数据库操作等..
+
+```java
+@After
+public void release() {
+    demo = null;
+    System.out.println("release");
+}
+```
