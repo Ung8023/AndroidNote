@@ -20,6 +20,8 @@ $ adb shell monkey <event-count>
 ```
 
 ### 查看monkey脚本
+批处理调用的是`com.android.commands.monkey.Monkey`包，如果希望定制monkey，则需要修改这个包
+
 ```
 base=/system
 export CLASSPATH=$base/framework/monkey.jar
