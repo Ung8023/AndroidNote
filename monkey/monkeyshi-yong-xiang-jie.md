@@ -19,5 +19,13 @@ $ adb shell monkey <event-count>
 
 ```
 
+### 查看monkey脚本
+```
+base=/system
+export CLASSPATH=$base/framework/monkey.jar
+trap "" HUP
+exec app_process $base/bin com.android.commands.monkey.Monkey $*
+```
+
 
 
