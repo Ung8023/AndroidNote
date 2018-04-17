@@ -101,6 +101,17 @@ public void timeFalse() {
 }
 ```
 
+### 异常测试
+Junit 用代码处理提供了一个追踪异常的选项。你可以测试代码是否它抛出了想要得到的异常。`expected` 参数和 `@Test` 注释一起使用。
+
+```java
+@Test(expected = ArithmeticException.class)
+public void testException() {
+    int a = 1 /0;
+}
+```
+
+
 ### 使用Assert验证结果
 ```java
 assertEquals(expected, actual)
@@ -131,16 +142,7 @@ fail()
 让测试方法失败
 ```
 
-### 异常测试
-Junit 用代码处理提供了一个追踪异常的选项。你可以测试代码是否它抛出了想要得到的异常。`expected` 参数和 `@Test` 注释一起使用。
 
-```java
-@Test(expected = ArithmeticException.class)
-   public void testPrintMessage() { 
-      System.out.println("Inside testPrintMessage()");     
-      messageUtil.printMessage();     
-   }
-```
 
 ### 套件测试
 如果有多个测试类，并且想要一起执行他们`@RunWith` 和 `@Suite` 注释用来运行套件测试。
