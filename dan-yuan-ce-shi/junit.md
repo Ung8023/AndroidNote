@@ -74,6 +74,10 @@ public void release() {
 2. 执行完所有测试方法之后，会执行一遍被`@AfterClass`修饰的方法。  
 3. 这两个方法可以用来`setup`和`release`一些公共的资源，需要注意的是，被这两个`annotation`修饰的方法必须是静态的。
 
+### `@Ignore`
+忽略测试，如在方法还未完善时，可利用此方法.
+
+
 ### 使用Assert验证结果
 ```java
 assertEquals(expected, actual)
