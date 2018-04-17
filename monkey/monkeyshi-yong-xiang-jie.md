@@ -12,4 +12,5 @@ $ adb shell
 
 或
 $ adb shell /system/bin/monkey
+
 ```
