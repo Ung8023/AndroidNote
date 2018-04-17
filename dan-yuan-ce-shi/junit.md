@@ -10,7 +10,9 @@
 ### 添加junit库依赖
 
 ```java
-testImplementation 'junit:junit:4.12'
+dependencies {
+    testImplementation 'junit:junit:4.12'
+}
 ```
 
 
