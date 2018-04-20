@@ -4,9 +4,7 @@
 
 ## Android四大组件
 
-* Activity
-
-
+* [Activity](androidsi-da-zu-jian/activity.md)
 
 ## 架构
 
@@ -33,6 +31,4 @@
   * [Mockito](dan-yuan-ce-shi/mockito.md)
 * [Monkey](monkey.md)
   * [Monkey使用详解](monkey/monkeyshi-yong-xiang-jie.md)
-
-
 
