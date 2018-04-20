@@ -44,3 +44,8 @@
 1. JNI
 1. 脚本开发
 1. IPC机制(Binder原理)
+1. SystemServer的启动过程
+1. 主线程的消息循环模型
+1. AMS和PMS的工作原理
+1. Window(一个应用存在多少个Window？)
+1. 
