@@ -7,7 +7,7 @@
 | `onResume` | 表示`Activity`已经可见，并且出现在前台并开始活动。 |
 | `onPause` | 表示`Activity`正在停止，正常情况下紧接着`onStop`会被执行，但是如果这时快速回到当前`Activity`,那么`onResume`会被调用。(此时可以存储数据、停止动画，但是**不能太耗时**) |
 | `onStop` | 表示`Activity`即将停止，可以做一些稍微重量级的回收工作，**不能太耗时** |
-
+| `onDestroy` | 表示`Activity`即将被销毁，可以做一些回收工作和最终资源的释放 |
 
 ## 典型情况
 用户参与时，`Activity`经历的声明周期
