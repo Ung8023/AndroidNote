@@ -1,8 +1,11 @@
 ## 声明周期方法
 | 方法 |  释 |
 | :---: | :---: |
-| `onCreate` | 表示Activity正在被创建(可以做一些初始化工作，加载界面布局资源，初始化需要的数据) |
-| `onReStart` | 表示Activity正在被重新启动。
+| `onCreate` | 表示`Activity`正在被创建(可以做一些初始化工作，加载界面布局资源，初始化需要的数据) |
+| `onReStart` | 表示`Activity`正在被重新启动。当`Activity`从不可见重新变为可见状态时，会被调用 |
+| `onStart` | 表示`Activity`正在被启动，即将开始，这是Activity已经可见，但是还没有出现在前台，还无法和用户交互 |
+| `onResume` | 表示`Activity`已经可见，并且出现在前台并开始活动。 |
+| `onPause` | 表示`Activity`正在停止，正常情况下紧接着`onStop`会被执行，但是如果这时快速回到当前`Activity`,那么`onResume`会被调用。(此时可以存储数据、停止动画，但是不能太耗时) |
 
 ## 典型情况
 用户参与时，`Activity`经历的声明周期
