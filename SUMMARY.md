@@ -5,7 +5,7 @@
 ## Android四大组件
 
 * [Activity](androidsi-da-zu-jian/activity.md)
-  * 声明周期
+  * [声明周期](androidsi-da-zu-jian/activity/sheng-ming-zhou-qi.md)
 
 ## 架构
 
