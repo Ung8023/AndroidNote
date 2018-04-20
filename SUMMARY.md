@@ -2,6 +2,12 @@
 
 * [前言](README.md)
 
+## Android四大组件
+
+* Activity
+
+
+
 ## 架构
 
 * [MVC](jia-gou/mvc.md)
@@ -28,7 +34,5 @@
 * [Monkey](monkey.md)
   * [Monkey使用详解](monkey/monkeyshi-yong-xiang-jie.md)
 
-## Android四大组件
 
-* Activity
 
