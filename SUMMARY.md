@@ -5,6 +5,7 @@
 ## Android四大组件
 
 * [Activity](androidsi-da-zu-jian/activity.md)
+  * 声明周期
 
 ## 架构
 
