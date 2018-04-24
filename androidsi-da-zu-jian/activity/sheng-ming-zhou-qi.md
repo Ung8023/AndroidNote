@@ -22,6 +22,7 @@
     
     特殊情况： `如果新Activity采用了透明主题，那么当前Activity不会回调onStop`
     
-1. 
+1. 当用户再次回到原`Activity`,回调如下: `onRestart --> onStart --> onResume`
+
 ## 异常情况
 `Activity`被系统回收或者由于设备的`Configuration`发生改变从而导致`Activity`被销毁重建。
