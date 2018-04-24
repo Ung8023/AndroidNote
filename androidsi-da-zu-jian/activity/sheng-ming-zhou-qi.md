@@ -19,6 +19,8 @@
 #### 具体流程
 1. 一个`Activity`，第一次启动: `onCreate --> onStart --> onResume`
 2. 用户打开新的Activity，或者切换到桌面时(目前显示的`Acticity`经历的声明周期): `onPause --> onStop`
+    
+    特殊情况： `如果新Activity采用了透明主题，那么当前Activity不会回调onStop`
 
 ## 异常情况
 `Activity`被系统回收或者由于设备的`Configuration`发生改变从而导致`Activity`被销毁重建。
