@@ -24,7 +24,7 @@
     
 1. 当用户再次回到原`Activity`,回调如下: `onRestart --> onStart --> onResume`
 1. 当用户按`back`键回退时: `onPause --> onStop --> onDestory`
-1. `onPause`执行之后新`Activity`的`onCreate -> onStart -> onResume`才会执行，所以不能在`onPause`中做重量级操作.
+1. `onPause`执行之后新`Activity`的`onCreate -> onStart -> onResume`才会执行，所以不能在`onPause`中做重量级操作。
 
 ## 异常情况
 `Activity`被系统回收或者由于设备的`Configuration`发生改变从而导致`Activity`被销毁重建。
