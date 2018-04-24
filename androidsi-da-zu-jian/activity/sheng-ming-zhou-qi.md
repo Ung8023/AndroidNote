@@ -14,8 +14,10 @@
 
 ### 生命周期
 
+![](/assets/Activity声明周期(典型情况).png)
 
-
+#### 具体流程
+1. 一个`Activity`，第一次启动: `onCreate --> onStart --> onResume`
 
 ## 异常情况
 `Activity`被系统回收或者由于设备的`Configuration`发生改变从而导致`Activity`被销毁重建。
