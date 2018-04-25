@@ -71,4 +71,6 @@ public void onConfigurationChanged(Configuration newConfig) {
 | uiMode | 用户界面模式发生了改变，（比如是否开启了夜间模式） |
 | orientation | 屏幕方向发生了改变 |
 | screenSize | 当屏幕尺寸信息发生了改变，当旋转设备屏幕时，屏幕尺寸会发生变化，它和编译选项有关，当编译选中中的`minSdkVersion`和`targetSdkVersion`均低于13时，此项不会导致`Activity`重启，否则会导致`Activity`重启（API13新添加） |
-|
+| smallestScreenSize | 设备的物理尺寸发生改变，这个属性和屏幕方向无关，仅仅代表实际的物理屏幕尺寸改变的时候发生，比如用户切换到了外部显示器。当编译选中中的`minSdkVersion`和`targetSdkVersion`均低于13时，此项不会导致`Activity`重启，否则会导致`Activity`重启（API13新添加） |
+| layoutDirection | 当布局方向发生变化 |
+
