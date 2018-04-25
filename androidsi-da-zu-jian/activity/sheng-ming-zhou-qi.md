@@ -14,7 +14,7 @@
 
 ### 生命周期
 
-![](/assets/Activity声明周期(典型情况).png)
+![](/assets/Activity典型情况下的生命周期.png)
 
 #### 具体流程
 1. 一个`Activity`，第一次启动: `onCreate --> onStart --> onResume`
