@@ -39,3 +39,11 @@
 
 ![](/assets/Activity异常情况下的声明周期.png)
 
+### 配置`configChanges`使`Activity`不重建
+可以通过指定`configChanges`指定当配置变化时，`Activity`不重建
+
+```xml
+当屏幕旋转是，不重建,指定多个值使用 '|' 连接
+android:configChanges="orientation"
+```
+
