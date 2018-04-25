@@ -54,3 +54,5 @@ public void onConfigurationChanged(Configuration newConfig) {
     ........
 }
 ```
+
+#### configChanges属性和含义
