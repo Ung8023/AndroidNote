@@ -56,3 +56,15 @@ public void onConfigurationChanged(Configuration newConfig) {
 ```
 
 #### configChanges属性和含义
+
+| 属性 | 含义 |
+| :---: | :---: |
+| mcc | `SIM`卡唯一标识`IMSI`(国际移动用户识别码)中的国家代码，由三位数字组成 |
+| mnc | `SIM`卡唯一标识`IMSI`中的运营商代码，由两位数组组成  |
+| locale | 设备的本地位置发生了改变（一般指切换了系统语言） |
+| touchscreen | 触摸屏发生了改变  |
+| keyboard | 键盘类型发生了改变（比如用户使用了外插键盘） |
+| keyboardHidden | 键盘的可访问性发生了改变(比如用户调出了键盘) |
+| navigation | 系统导航方式发生了改变 |
+| screenLayout | 屏幕布局发生了改变（很可能是用户激活了另外一个设备） |
+| fontScale | 系统字体缩放比例发生了变化（比如用户选择了一个新的字号） |
