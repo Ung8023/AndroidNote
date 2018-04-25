@@ -6,6 +6,7 @@
 
 * [Activity](androidsi-da-zu-jian/activity.md)
   * [生命周期](androidsi-da-zu-jian/activity/sheng-ming-zhou-qi.md)
+  * [启动模式](androidsi-da-zu-jian/activity/qi-dong-mo-shi.md)
 
 ## 架构
 
