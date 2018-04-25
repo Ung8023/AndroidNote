@@ -27,7 +27,13 @@
 1. `onPause`执行之后新`Activity`的`onCreate -> onStart -> onResume`才会执行，所以不能在`onPause`中做重量级操作。
 
 ## 异常情况
-`Activity`被系统回收或者由于设备的`Configuration`发生改变从而导致`Activity`被销毁重建。
+1. `Activity`被系统回收或者由于设备的`Configuration`发生改变从而导致`Activity`被销毁重建。
+2. 资源不足导致低优先级的`Activity`被回杀死
+    
+    1. 前台`Activity` —— 正在和用户交互的`Activity`，优先级最高
+    2. 可见但非前台`Activity` —— `Activity`中弹出了一个对话框，导致`Activity`可见，但是位于后台无法和用户交互
+    3. 后台`Activity` —— 已经被暂停的`Activity`，比如执行了`onStop`，优先级最低。
+
 
 ### 生命周期
 
