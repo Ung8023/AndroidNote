@@ -68,3 +68,7 @@ public void onConfigurationChanged(Configuration newConfig) {
 | navigation | 系统导航方式发生了改变 |
 | screenLayout | 屏幕布局发生了改变（很可能是用户激活了另外一个设备） |
 | fontScale | 系统字体缩放比例发生了变化（比如用户选择了一个新的字号） |
+| uiMode | 用户界面模式发生了改变，（比如是否开启了夜间模式） |
+| orientation | 屏幕方向发生了改变 |
+| screenSize | 当屏幕尺寸信息发生了改变，当旋转设备屏幕时，屏幕尺寸会发生变化，它和编译选项有关，当编译选中中的`minSdkVersion`和`targetSdkVersion`均低于13时，此项不会导致`Activity`重启，否则会导致`Activity`重启（API13新添加） |
+|
