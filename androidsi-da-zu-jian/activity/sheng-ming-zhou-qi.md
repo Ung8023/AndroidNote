@@ -47,3 +47,10 @@
 android:configChanges="orientation"
 ```
 
+```java
+@Override
+public void onConfigurationChanged(Configuration newConfig) {
+    super.onConfigurationChanged(newConfig);
+    ........
+}
+```
