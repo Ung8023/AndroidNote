@@ -128,6 +128,16 @@ public void testInteractions() {
 通过注解创建对象，当使用`@Mock`注解的对象之前，需要调用`MockitoAnnotations.initMocks()`;
 
 ```java
+@Mock
+private List list;
+
+@Mock
+private Map map;
+
+@Before
+public void setUp() {
+    MockitoAnnotations.initMocks(this);
+}
 
 ```
 
