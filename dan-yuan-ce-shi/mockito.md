@@ -193,3 +193,11 @@ public void testCallBack() {
     System.out.println(mockCallBack.doWithCallback(callback));
 }
 ```
+
+### do 系列函数
+1. `doReturn()`
+1. `doThrow()`
+1. `doAnswer()`
+1. `doNothing()`
+1. `doCallRealMethod`
+
