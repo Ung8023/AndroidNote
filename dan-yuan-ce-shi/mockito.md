@@ -166,3 +166,30 @@ public void testLinkStub() {
 
 ### 为回调做测试桩
 
+```java
+@Test
+public void testCallBack() {
+    MockCallBack mockCallBack = mock(MockCallBack.class);
+
+
+    MockCallBack.Callback callback = new MockCallBack.Callback() {
+        @Override
+        public String callBack() {
+            return "Zhan";
+        }
+    };
+
+    when(mockCallBack.doWithCallback(callback)).thenAnswer(new Answer<Object>() {
+        @Override
+        public Object answer(InvocationOnMock invocation) throws Throwable {
+            // 获取函数的调用参数
+            Object[] args = invocation.getArguments();
+            // 获得Mock对象本身
+            Object mock = invocation.getMock();
+            return "called with argument:" + args;
+        }
+    });
+
+    System.out.println(mockCallBack.doWithCallback(callback));
+}
+```
