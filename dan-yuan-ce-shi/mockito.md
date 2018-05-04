@@ -108,5 +108,18 @@ public void testMethodTimes() {
 ### 验证交互操作没有执行在mock对象上
 
 ```java
+@Test
+public void testInteractions() {
+    List mock = mock(List.class);
 
+    mock.add("one");
+
+    //普通验证
+    verify(mock).add("one");
+    // 验证某个交互是否从未被执行
+    verify(mock, never()).add("two");
+    // 验证mock对象没有交互过
+    verifyZeroInteractions(mock);
+
+}
 ```
