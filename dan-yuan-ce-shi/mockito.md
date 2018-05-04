@@ -23,3 +23,23 @@ public void behaviorVerify() {
 
 ### 做测试桩
 
+```java
+@Test
+public void testStub() {
+    //Mock具体的类型
+    LinkedList mockList = mock(LinkedList.class);
+    
+    //添加测试桩,在调用get(0)时返回"first"
+    when(mockList.get(0)).thenReturn("a String");
+    
+    //调用get(1)时抛出异常
+    when(mockList.get(1)).thenThrow(new RuntimeException("挂了"));
+    
+    //输出
+    System.out.println(mockList.get(0));
+    //抛出异常
+    System.out.println(mockList.get(1));
+    //输出null，因为没有打桩
+    System.out.println(mockList.get(123));
+}
+```
