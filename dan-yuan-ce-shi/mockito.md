@@ -104,3 +104,9 @@ public void testMethodTimes() {
 
 }
 ```
+
+### 验证交互操作没有执行在mock对象上
+
+```java
+
+```
