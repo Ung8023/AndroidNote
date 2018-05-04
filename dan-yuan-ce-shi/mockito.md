@@ -46,3 +46,24 @@ public void testStub() {
 
 ### 参数匹配器
 
+```java
+@Test
+public void testParamMatcher() {
+    LinkedList mockList = mock(LinkedList.class);
+
+    //使用内置的anyInt()参数匹配器
+
+    when(mockList.get(anyInt())).thenReturn("A");
+    //使用自定义的参数匹配器
+    when(mockList.contains(myMatcher())).thenReturn(false);
+
+    assertEquals("A", mockList.get(anyInt()));
+    assertFalse(mockList.contains(myMatcher()));
+
+}
+
+private String myMatcher() {
+    mockingProgress().getArgumentMatcherStorage().reportMatcher((new InstanceOf(String.class, "<aaaaa>")));
+    return "";
+}
+```
