@@ -70,3 +70,7 @@ private String myMatcher() {
     return "";
 }
 ```
+
+#### eq()与anyObject
+`eq()`，将传入的参数作为参数
+`anyObject()` 返回一个假的值
