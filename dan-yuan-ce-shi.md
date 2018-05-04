@@ -26,4 +26,4 @@
 | junit | 主要用来做本地测试 |
 | Mockito | 用来模拟数据 |
 | AndroidJUnit4 | 用于`Android`设备单元测试，运行在`Android`设备上，通常需要`Android`运行环境时使用 |
-|              |  |
+| UI Automator | UI测试框架，适用于跨系统和已安装应用程序的跨应用程序功能UI测试。 |
