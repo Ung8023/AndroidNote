@@ -76,3 +76,31 @@ private String myMatcher() {
 `anyObject()` 返回一个假的值
 
 ### 验证函数的确切调用次数、最少调用、从未调用
+
+```java
+@Test
+public void testMethodTimes() {
+    LinkedList mockList = mock(LinkedList.class);
+
+    mockList.add("Once");
+    mockList.add("Twice");
+    mockList.add("Twice");
+    mockList.add("Three times");
+    mockList.add("Three times");
+    mockList.add("Three times");
+
+    verify(mockList).add("Once");
+    verify(mockList, times(1)).add("Once");
+
+    verify(mockList, times(2)).add("Twice");
+    verify(mockList, times(3)).add("Three times");
+
+    verify(mockList, never()).add("asdfad");
+
+    // 使用atLeast() | atMost()
+    verify(mockList, atLeastOnce()).add("Once");
+    verify(mockList, atLeast(2)).add("Three times");
+    verify(mockList, atMost(2)).add("Twice");
+
+}
+```
