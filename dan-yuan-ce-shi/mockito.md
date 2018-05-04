@@ -20,3 +20,6 @@ public void behaviorVerify() {
     verify(mockList).clear();
 }
 ```
+
+### 做测试桩
+
