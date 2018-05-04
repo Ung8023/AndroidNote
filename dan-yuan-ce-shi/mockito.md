@@ -123,3 +123,5 @@ public void testInteractions() {
 
 }
 ```
+
+### 简化Mock对象创建
