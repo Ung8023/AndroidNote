@@ -46,6 +46,8 @@ public void testStub() {
 
 ### 参数匹配器
 
+如果一个方法使用了参数匹配器，就必须所有参数都使用参数匹配器
+
 ```java
 @Test
 public void testParamMatcher() {
