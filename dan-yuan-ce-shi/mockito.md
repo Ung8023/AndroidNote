@@ -201,3 +201,11 @@ public void testCallBack() {
 1. `doNothing()`
 1. `doCallRealMethod`
 
+
+### 监控真实对象
+可以为真实对象创建一个监控对象，当使用这个spy对象时，真实对象的也会调用
+
+
+```
+
+```
