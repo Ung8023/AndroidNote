@@ -125,3 +125,4 @@ public void testInteractions() {
 ```
 
 ### 简化Mock对象创建
+通过注解创建对象，当使用`@Mock`注解的对象之前，需要调用`MockitoAnnotations.initMocks()`;
