@@ -74,3 +74,5 @@ private String myMatcher() {
 #### eq()与anyObject
 `eq()`，将传入的参数作为参数
 `anyObject()` 返回一个假的值
+
+### 验证函数的确切调用次数、最少调用、从未调用
