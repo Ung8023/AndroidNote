@@ -6,7 +6,17 @@
 ### 验证行为
 
 ```java
-public Object getSameObject(Object object) {
-        return object;
-    }
+@Test
+public void behaviorVerify() {
+    // 创建Mock对象
+    List mockList = mock(List.class);
+
+    // 使用Mock对象
+    mockList.add("one");
+    mockList.clear();
+
+    //验证函数的调用次数
+    verify(mockList).add("one");
+    verify(mockList).clear();
+}
 ```
