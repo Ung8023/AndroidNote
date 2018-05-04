@@ -4,3 +4,9 @@
 ## 常见功能
 
 ### 验证行为
+
+```java
+public Object getSameObject(Object object) {
+        return object;
+    }
+```
