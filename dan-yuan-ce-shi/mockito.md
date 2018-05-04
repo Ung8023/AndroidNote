@@ -142,3 +142,24 @@ public void setUp() {
 ```
 
 ### 为连续的调用做测试桩
+
+```java
+@Test
+    public void testLinkStub() {
+        List list = mock(List.class);
+
+        when(list.get(0)).thenReturn(30)
+                .thenReturn(10)
+                .thenReturn(20);
+
+        //等价于：
+        when(list.get(1)).thenReturn(10, 20, 30, 40, 50);
+
+        //第一次调用: 返回30
+        System.out.println(list.get(0));
+        //第二次调用: 返回10
+        System.out.println(list.get(0));
+        //第三次调用: 返回20
+        System.out.println(list.get(0));
+    }
+```
