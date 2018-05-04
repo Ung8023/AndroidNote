@@ -206,5 +206,31 @@ public void testCallBack() {
 可以为真实对象创建一个监控对象，当使用这个spy对象时，真实对象的也会调用
 
 ```java
+@Test
+public void testSpy() {
+    List list = new LinkedList();
+    //监控一个真实对象
+    List spy = spy(list);
 
+    //为某些函数打桩
+    when(spy.size()).thenReturn(100);
+
+    //通过spy对象调用真实对象的函数
+    spy.add("one");
+    spy.add("tow");
+
+    //输出第一个元素
+    System.out.println(spy.get(0));
+
+    System.out.println(spy.size());
+
+    verify(spy).add("one");
+    verify(spy).add("two");
+
+    // 这种方式会报指针越界
+    // when(spy.get(3)).thenReturn("foo");
+    //通过doReturn 打桩
+    doReturn("foo").when(spy).get(3);
+    
+}
 ```
