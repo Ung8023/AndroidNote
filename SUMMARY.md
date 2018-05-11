@@ -25,6 +25,7 @@
 
 * [WebView](androidwidgets/webview.md)
   * [从本地读取文件](androidwidgets/cong-ben-di-du-qu-wen-jian.md)
+* [自定义View](androidwidgets/zi-ding-yi-view.md)
 
 ## Android自动化测试
 
