@@ -37,7 +37,7 @@
 
 ### 生命周期
 
-![](/assets/Activity异常情况下的声明周期.png)
+![](/assets/Activity异常情况下的生命周期.png)
 
 ### 配置`configChanges`使`Activity`不重建
 可以通过指定`configChanges`指定当配置变化时，`Activity`不重建
