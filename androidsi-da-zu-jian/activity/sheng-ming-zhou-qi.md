@@ -1,6 +1,6 @@
 ## 生命周期方法
 | 方法 |  释 |
-| :---: | :---: |
+| :---: | :--- |
 | `onCreate` | 表示`Activity`正在被创建(可以做一些初始化工作，加载界面布局资源，初始化需要的数据) |
 | `onReStart` | 表示`Activity`正在被重新启动。当`Activity`从不可见重新变为可见状态时，会被调用 |
 | `onStart` | 表示`Activity`正在被启动，即将开始，这是Activity已经可见，但是还没有出现在前台，还无法和用户交互 |
@@ -58,7 +58,7 @@ public void onConfigurationChanged(Configuration newConfig) {
 #### configChanges属性和含义
 
 | 属性 | 含义 |
-| :---: | :---: |
+| :---: | :--- |
 | mcc | `SIM`卡唯一标识`IMSI`(国际移动用户识别码)中的国家代码，由三位数字组成 |
 | mnc | `SIM`卡唯一标识`IMSI`中的运营商代码，由两位数组组成  |
 | locale | 设备的本地位置发生了改变（一般指切换了系统语言） |
