@@ -42,5 +42,20 @@
 ## 需要的任务栈
 一个`Activity`默认需要的任务栈是以`App`包名定义的,但是可以通过`TaskAffinity`指定，它标识了`Activity`需要的任务栈。主要与`singleTask`启动模式或者`allowTaskReparenting`属性配对使用，其他情况下没有意义。任务栈分为**前台任务栈**和**后台任务栈**,后台任务栈中的`Activity`，处于暂停状态。
 
+### 指定任务栈
+#### Manifest中指定
+
+```xml
+<activity
+    android:name="xxx.xxx.XActivity"
+    android:taskAffinity="aaaaa"
+    android:theme="@style/AppTheme">
+    <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+</activity>
+```
+
 ### `TaskAffinity`与`singleTask`启动模式配对使用
 `TaskAffinity`是具有`singleTask`模式的`Activity`的目前任务栈的名字，待启动的`Activity`会运行在名字和`TaskAffinity`相同的任务栈中。
