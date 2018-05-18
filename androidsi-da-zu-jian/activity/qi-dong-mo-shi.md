@@ -7,4 +7,4 @@
 | `singleInstance` | `单实例模式`，此模式的`Activity`单独位于一个任务栈中，系统会为它创建一个新的任务栈，后续的请求不会创建新的Activity |
 
 
-### 
+### Standard模式
