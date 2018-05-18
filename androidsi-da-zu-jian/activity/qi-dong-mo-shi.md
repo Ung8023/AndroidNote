@@ -7,4 +7,37 @@
 | `singleInstance` | `单实例模式`，此模式的`Activity`单独位于一个任务栈中，系统会为它创建一个新的任务栈，后续的请求不会创建新的Activity |
 
 
-### Standard模式
+### `standard`模式
+
+![](/assets/standard.png)
+
+### `singleTop`
+
+![](/assets/singletop不在栈顶.png)
+
+![](/assets/singletop在栈顶.png)
+
+### `singleTask`
+
+![](/assets/SingleTask.png)
+
+#### `singleTask`特殊情况
+
+##### 前提条件
+
+![](/assets/singleTask特殊情况前提.png)
+
+##### 特殊情况1
+
+![](/assets/singleTask特殊情况1.png)
+
+##### 特殊情况2
+
+![](/assets/singleTask特殊情况2.png)
+
+### `singleInstance`
+
+![](/assets/singleInstance.png)
+
+## 需要的任务栈
+
