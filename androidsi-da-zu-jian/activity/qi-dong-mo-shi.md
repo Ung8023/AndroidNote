@@ -40,4 +40,4 @@
 ![](/assets/singleInstance.png)
 
 ## 需要的任务栈
-
+一个`Activity`默认需要的任务栈是以`App`包名定义的,但是可以通过`TaskAffinity`指定，它标识了`Activity`需要的任务栈。
