@@ -57,5 +57,7 @@
 </activity>
 ```
 
+
+
 ### `TaskAffinity`与`singleTask`启动模式配对使用
 `TaskAffinity`是具有`singleTask`模式的`Activity`的目前任务栈的名字，待启动的`Activity`会运行在名字和`TaskAffinity`相同的任务栈中。
