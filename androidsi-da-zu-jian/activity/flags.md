@@ -4,10 +4,14 @@
 
 ```java
 Intent intent = new Intent();
-intent.setFlag(XXFLAG | XXFLAG);
+intent.setFlag(XXFLAG | XXXFLAG);
 ```
 
 ## 更改启动模式
 
 #### `FLAG_ACTIVITY_NEW_TASK`
-相当于
+相当于在`xml`中指定`singleTask`模式：  
+
+```java
+intent.setFlag(Intent.FLAG_ACTIVITY_NEW_TASK);
+```
