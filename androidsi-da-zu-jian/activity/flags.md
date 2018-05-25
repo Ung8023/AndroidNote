@@ -28,3 +28,5 @@ intent.setFlag(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 ### `FLAG_ACTIVITY_CLEAR_TOP`
 具有此标记位的`Activity`在同一个任务栈中，所有位于它上面的`Activity`都要出栈
 
+#### 与`FLAG_ACTIVITY_NEW_TASK`配合使用
+相当于在XML中指定SingleTask``
