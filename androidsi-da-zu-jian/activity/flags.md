@@ -9,14 +9,14 @@ intent.setFlag(XXFLAG | XXXFLAG);
 
 ## 更改`Activity`启动模式
 
-#### `FLAG_ACTIVITY_NEW_TASK`
+### `FLAG_ACTIVITY_NEW_TASK`
 相当于在`xml`中指定`singleTask`模式：  
 
 ```java
 intent.setFlag(Intent.FLAG_ACTIVITY_NEW_TASK);
 ```
 
-#### `FLAG_ACTIVITY_SINGLE_TOP`
+### `FLAG_ACTIVITY_SINGLE_TOP`
 相当于在`xml`中指定`singleTop`模式：  
 
 ```java
@@ -25,6 +25,6 @@ intent.setFlag(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 
 ## 更改`Activity`运行状态
 
-#### `FLAG_ACTIVITY_CLEAR_TOP`
+### `FLAG_ACTIVITY_CLEAR_TOP`
 具有此标记位的`Activity`在同一个任务栈中，所有位于它上面的`Activity`都要出栈
 
